@@ -5,7 +5,7 @@ import { blogPosts } from '@/data/blog-posts'
 import brands from '@/data/brands.json'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aircoinstallatie-maastricht.nl'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aircoinstallatieheerlen.nl'
   const lastModified = new Date()
 
   // Static pages with custom priorities
@@ -35,7 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${siteUrl}/steden/${city.slug}`,
     lastModified,
     changeFrequency: 'weekly' as const,
-    priority: city.city.toLowerCase() === 'maastricht' ? 1.0 :
+    priority: city.city.toLowerCase() === 'heerlen' ? 1.0 :
              city.population > 50000 ? 0.8 : 
              city.population > 20000 ? 0.7 : 
              city.population > 10000 ? 0.6 : 0.5,
@@ -78,7 +78,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${siteUrl}/diensten/${dienst.slug}/${city.slug}`,
       lastModified,
       changeFrequency: 'weekly' as const,
-      priority: city.city.toLowerCase() === 'maastricht' ? 0.9 :
+      priority: city.city.toLowerCase() === 'heerlen' ? 0.9 :
                city.population > 50000 ? 0.7 : 
                city.population > 20000 ? 0.6 : 
                0.5,

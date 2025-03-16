@@ -85,6 +85,7 @@ function updateUrlsInFile(filePath, oldUrl, newUrl) {
 for (const file of sitemapFiles) {
   const filePath = path.join(process.cwd(), 'public', file);
   updateUrlsInFile(filePath, 'https://aircooffertelimburg.nl', siteUrl);
+  updateUrlsInFile(filePath, 'https://aircoinstallatie-maastricht.nl', siteUrl);
 }
 
 console.log('Prebuild sitemap generation completed');
