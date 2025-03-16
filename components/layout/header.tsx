@@ -34,10 +34,10 @@ export function Header() {
         <Link 
           href="/" 
           className="flex items-center space-x-2 text-blue-600"
-          aria-label="StayCool Airco Maastricht - Home"
+          aria-label="StayCool Airco Heerlen - Home"
         >
           <AirVent className="h-6 w-6" aria-hidden="true" />
-          <span className="font-bold">StayCool Airco Maastricht</span>
+          <span className="font-bold">StayCool Airco Heerlen</span>
         </Link>
 
         {/* Desktop Navigation */}

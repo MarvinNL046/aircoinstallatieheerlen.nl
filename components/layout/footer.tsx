@@ -20,10 +20,10 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2">
               <AirVent className="h-6 w-6" />
-              <span className="font-bold">StayCool Airco Maastricht</span>
+              <span className="font-bold">StayCool Airco Heerlen</span>
             </div>
             <p className="mt-4 text-sm text-blue-200">
-              Professionele airconditioning installatie in Maastricht en omgeving. Erkend en gecertificeerd.
+              Professionele airconditioning installatie in Heerlen en omgeving. Erkend en gecertificeerd.
             </p>
             <p className="mt-2 text-sm text-blue-200">
               <a href="https://staycoolairco.nl" className="underline hover:text-white" target="_blank" rel="noopener noreferrer">
@@ -49,7 +49,7 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>Maastricht en omgeving</span>
+                <span>Heerlen en omgeving</span>
               </li>
             </ul>
           </div>

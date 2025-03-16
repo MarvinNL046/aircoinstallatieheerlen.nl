@@ -4,8 +4,8 @@ import ContactForm from '@/components/forms/ContactForm';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact | Airco Offerte Limburg',
-  description: 'Neem contact op met Airco Offerte Limburg voor een vrijblijvende offerte of advies over airconditioning installatie en onderhoud.',
+  title: 'Contact | Airco Installatie Heerlen',
+  description: 'Neem contact op met Airco Installatie Heerlen voor een vrijblijvende offerte of advies over airconditioning installatie en onderhoud.',
 };
 
 const contactInfo = [
@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Locatie',
-    content: 'Heel Limburg',
+    content: 'Heerlen en omgeving',
     href: '#',
   },
 ];
@@ -71,8 +71,8 @@ export default function ContactPage() {
             <div className="mt-8">
               <h2 className="text-2xl font-semibold mb-4">Werkgebied</h2>
               <p className="text-gray-600">
-                Wij zijn actief in heel Limburg en omstreken. Van Maastricht tot Venlo, 
-                en van Roermond tot Weert - wij komen graag bij u langs voor een vrijblijvend adviesgesprek.
+                Wij zijn actief in Heerlen en omstreken. Van Heerlen tot Kerkrade, 
+                en van Brunssum tot Landgraaf - wij komen graag bij u langs voor een vrijblijvend adviesgesprek.
               </p>
             </div>
           </div>

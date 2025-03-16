@@ -9,10 +9,10 @@ import { generateOrganizationSchema } from "@/lib/schema"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: 'StayCool Airco Maastricht | #1 in Airconditioning ✓',
-  description: 'Dé airco specialist van Maastricht! Professionele airco installatie voor woning en bedrijf door StayCool Airco. ✓ Gratis offerte ✓ Erkend installateur ✓ Alle topmerken ✓ 5 jaar garantie. Bel: 046 202 1430',
+  title: 'StayCool Airco Heerlen | #1 in Airconditioning ✓',
+  description: 'Dé airco specialist van Heerlen! Professionele airco installatie voor woning en bedrijf door StayCool Airco. ✓ Gratis offerte ✓ Erkend installateur ✓ Alle topmerken ✓ 5 jaar garantie. Bel: 046 202 1430',
   alternates: {
-    canonical: 'https://aircoinstallatie-maastricht.nl'
+    canonical: 'https://aircoinstallatieheerlen.nl'
   }
 }
 
@@ -46,7 +46,7 @@ export default function HomePage() {
             </div>
             <div className="text-center mt-8">
               <p className="text-lg text-muted-foreground">
-                Ontdek hoe StayCool Airco uw ideale partner is voor airconditioning in Maastricht en omgeving.
+                Ontdek hoe StayCool Airco uw ideale partner is voor airconditioning in Heerlen en omgeving.
               </p>
               <p className="mt-4">
                 <a 
