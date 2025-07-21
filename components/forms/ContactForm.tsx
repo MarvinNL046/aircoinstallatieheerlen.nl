@@ -1,17 +1,20 @@
 "use client";
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Send } from 'lucide-react';
-import { sendEmail } from '@/lib/emailjs';
+import { toast } from 'sonner';
 
 export default function ContactForm() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
+    city: 'Heerlen',
     message: '',
   });
 
@@ -31,11 +34,46 @@ export default function ContactForm() {
     setStatus('sending');
 
     try {
-      await sendEmail(formData);
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      // Track analytics if available
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'form_submit', {
+          event_category: 'engagement',
+          event_label: 'contact_form',
+          value: 1
+        });
+      }
+
+      // Track Facebook Pixel if available
+      if (typeof window !== 'undefined' && window.fbq) {
+        window.fbq('track', 'Lead', {
+          content_name: 'contact_form',
+          status: 'success'
+        });
+      }
+
+      toast.success('Bericht succesvol verzonden!');
       setStatus('success');
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', city: 'Heerlen', message: '' });
+      
+      // Redirect to thank you page
+      setTimeout(() => {
+        router.push('/tot-snel');
+      }, 1000);
     } catch (error) {
       console.error('Error:', error);
+      toast.error('Er is iets misgegaan. Probeer het later opnieuw.');
       setStatus('error');
     }
   };
@@ -70,6 +108,16 @@ export default function ContactForm() {
             name="phone"
             placeholder="Uw telefoonnummer"
             value={formData.phone}
+            onChange={handleChange}
+            required
+            className="w-full"
+          />
+        </div>
+        <div>
+          <Input
+            name="city"
+            placeholder="Uw stad"
+            value={formData.city}
             onChange={handleChange}
             required
             className="w-full"
