@@ -8,16 +8,25 @@ interface BreadcrumbItem {
 
 interface BreadcrumbProps {
   items: BreadcrumbItem[]
+  variant?: 'light' | 'dark'
 }
 
-export function Breadcrumb({ items }: BreadcrumbProps) {
+export function Breadcrumb({ items, variant = 'dark' }: BreadcrumbProps) {
+  const textClass = variant === 'light' 
+    ? 'text-white/80 hover:text-white' 
+    : 'text-gray-700 hover:text-blue'
+  
+  const chevronClass = variant === 'light'
+    ? 'text-white/60'
+    : 'text-gray-400'
+
   return (
-    <nav className="flex mb-6" aria-label="Breadcrumb">
+    <nav className="flex" aria-label="Breadcrumb">
       <ol className="inline-flex items-center space-x-1 md:space-x-3">
         <li className="inline-flex items-center">
           <Link
             href="/"
-            className="inline-flex items-center text-sm text-gray-700 hover:text-blue-600"
+            className={`inline-flex items-center text-sm ${textClass}`}
           >
             <Home className="w-4 h-4 mr-2" />
             Home
@@ -26,10 +35,10 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
         {items.map((item, index) => (
           <li key={index}>
             <div className="flex items-center">
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className={`w-4 h-4 ${chevronClass}`} />
               <Link
                 href={item.href}
-                className="ml-1 text-sm text-gray-700 hover:text-blue-600 md:ml-2"
+                className={`ml-1 text-sm ${textClass} md:ml-2`}
               >
                 {item.label}
               </Link>

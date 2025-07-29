@@ -1,0 +1,562 @@
+{
+  "products": [
+    {
+      "id": "daikin-comfora",
+      "brand": "Daikin",
+      "model": "Comfora",
+      "category": "split-airco",
+      "image": "/images/daikin-comfora-right.webp",
+      "gallery": [
+        "/images/daikin-comfora-right.webp",
+        "/images/daikin-comfora-left.webp",
+        "/images/daikin comfora-onectaApp.webp"
+      ],
+      "description": "De Daikin Comfora is een betaalbare en betrouwbare airco met uitstekende prestaties voor iedere ruimte.",
+      "features": [
+        "Energielabel A++ koelen / A+ verwarmen",
+        "Fluisterstil vanaf 19 dB(A)",
+        "2-zone bewegingssensor",
+        "Onada luchtverdeling"
+      ],
+      "capacities": ["2.0 kW", "2.5 kW", "3.5 kW", "5.0 kW"],
+      "seo": {
+        "title": "Daikin Comfora Airco",
+        "description": "Betaalbare Daikin Comfora split airco met A++ energielabel. Fluisterstil en energiezuinig."
+      }
+    },
+    {
+      "id": "daikin-emura",
+      "brand": "Daikin",
+      "model": "Emura",
+      "category": "split-airco",
+      "image": "/images/daikin-emura-wit.webp",
+      "gallery": [
+        "/images/daikin-emura-wit.webp",
+        "/images/daikin-emura-zilver.webp",
+        "/images/daikin-emura-zwart.webp"
+      ],
+      "description": "De Daikin Emura combineert een elegant design met geavanceerde technologie voor optimaal comfort.",
+      "features": [
+        "Bekroond design in zilver, wit of zwart",
+        "Energielabel A+++ koelen / A++ verwarmen",
+        "Intelligente oogsensor",
+        "Coanda luchtstroom"
+      ],
+      "capacities": ["2.0 kW", "2.5 kW", "3.5 kW", "4.2 kW", "5.0 kW"],
+      "seo": {
+        "title": "Daikin Emura Design Airco",
+        "description": "Stijlvolle Daikin Emura met bekroond design en A+++ energielabel. Premium airco voor moderne interieurs."
+      }
+    },
+    {
+      "id": "daikin-stylish",
+      "brand": "Daikin",
+      "model": "Stylish",
+      "category": "split-airco",
+      "image": "/images/daikin-stylish-wit.webp",
+      "gallery": [
+        "/images/daikin-stylish-wit.webp",
+        "/images/daikin-stylish-zwart.webp",
+        "/images/daikin-stylish-silver.webp"
+      ],
+      "description": "De Daikin Stylish is een ultramoderne airco met een minimalistisch design en maximale prestaties.",
+      "features": [
+        "Slank design (189mm diep)",
+        "Energielabel A+++ koelen / A+++ verwarmen",
+        "Effect Black of White uitvoering",
+        "Coanda effect voor optimale luchtverdeling"
+      ],
+      "capacities": ["2.0 kW", "2.5 kW", "3.5 kW", "4.2 kW", "5.0 kW"],
+      "seo": {
+        "title": "Daikin Stylish Design Airco",
+        "description": "Ultramoderne Daikin Stylish met minimalistisch design en A+++ energielabel. Slank en krachtig."
+      }
+    },
+    {
+      "id": "daikin-perfera",
+      "brand": "Daikin",
+      "model": "Perfera",
+      "category": "split-airco",
+      "image": "/images/daikin-perfera-wit.webp",
+      "description": "De Daikin Perfera is de meest geavanceerde airco met superieure luchtzuivering en energieprestaties.",
+      "features": [
+        "Flash Streamer luchtzuivering",
+        "Energielabel A+++ koelen / A+++ verwarmen",
+        "Titanium apatiet ontgeuringsfilter",
+        "2-zone bewegingssensor"
+      ],
+      "capacities": ["2.0 kW", "2.5 kW", "3.5 kW", "4.2 kW", "5.0 kW", "7.1 kW"],
+      "seo": {
+        "title": "Daikin Perfera Premium Airco",
+        "description": "Premium Daikin Perfera met luchtzuivering en A+++ energielabel. Topmodel voor optimaal binnenklimaat."
+      }
+    },
+    {
+      "id": "daikin-ururu-sarara",
+      "brand": "Daikin",
+      "model": "Ururu Sarara",
+      "category": "split-airco",
+      "image": "/images/Ururu-Sarara-right.webp",
+      "gallery": [
+        "/images/Ururu-Sarara-right.webp",
+        "/images/Ururu-Sarara-left.webp"
+      ],
+      "description": "De Daikin Ururu Sarara is het vlaggenschip met bevochtiging, ontvochtiging, ventilatie en luchtzuivering.",
+      "features": [
+        "5-in-1 klimaatbeheersing",
+        "Bevochtiging zonder watertoevoer",
+        "Ventilatie met verse buitenlucht",
+        "Flash Streamer luchtzuivering"
+      ],
+      "capacities": ["2.5 kW", "3.5 kW", "5.0 kW"],
+      "seo": {
+        "title": "Daikin Ururu Sarara 5-in-1 Airco",
+        "description": "Revolutionaire Daikin Ururu Sarara met bevochtiging, ontvochtiging en ventilatie. Ultieme klimaatbeheersing."
+      }
+    },
+    {
+      "id": "lg-artcool",
+      "brand": "LG",
+      "model": "ArtCool",
+      "category": "split-airco",
+      "image": "/images/lg-artcool-mirror.webp",
+      "gallery": [
+        "/images/lg-artcool-mirror.webp",
+        "/images/rac-eu-lg-artcool-black.webp"
+      ],
+      "description": "De LG ArtCool Gallery combineert kunstzinnig design met krachtige prestaties en slimme functies.",
+      "features": [
+        "Aanpasbaar foto frame design",
+        "Dual Inverter Compressor",
+        "UVnano technologie",
+        "ThinQ WiFi besturing"
+      ],
+      "capacities": ["2.5 kW", "3.5 kW", "5.0 kW"],
+      "seo": {
+        "title": "LG ArtCool Gallery Design Airco",
+        "description": "Unieke LG ArtCool met aanpasbaar design en Dual Inverter technologie. Kunst en klimaat in één."
+      }
+    },
+    {
+      "id": "lg-dualcool-premium",
+      "brand": "LG",
+      "model": "DualCool Premium",
+      "category": "split-airco",
+      "image": "/images/LG-dualcool-indoor-premium.webp",
+      "gallery": [
+        "/images/LG-dualcool-indoor-premium.webp",
+        "/images/LG-dualcool-indoor-premium-1.webp",
+        "/images/rac-eu-lg-premium.webp"
+      ],
+      "description": "De LG DualCool Premium biedt superieure koeling met geavanceerde luchtzuivering en energiebesparing.",
+      "features": [
+        "Dual Inverter Compressor 10 jaar garantie",
+        "Plasmaster Ionizer Plus",
+        "Micro Dust Filter",
+        "Active Energy Control"
+      ],
+      "capacities": ["2.5 kW", "3.5 kW", "5.0 kW", "6.6 kW"],
+      "seo": {
+        "title": "LG DualCool Premium Airco",
+        "description": "Premium LG DualCool met 10 jaar compressorgarantie en Plasmaster luchtzuivering. Betrouwbaar en zuinig."
+      }
+    },
+    {
+      "id": "samsung-windfree",
+      "brand": "Samsung",
+      "model": "WindFree",
+      "category": "split-airco",
+      "image": "/images/samsung/windfreeElite/WindFree Elite_S2_Front_Web_RGB.webp",
+      "gallery": [
+        "/images/samsung/windfreeElite/WindFree Elite_S2_Front_Web_RGB.webp",
+        "/images/samsung/windfreeElite/WindFree Elite_S2_Left_Web_RGB.webp",
+        "/images/samsung/windfreeElite/WindFree Elite_S2_Right_Web_RGB.webp",
+        "/images/samsung/windfreeElite/Samsung RAC WindFree Elite_Sfeerbeeld_001.webp",
+        "/images/samsung/windfreeElite/Samsung RAC WindFree Elite_Sfeerbeeld_002.webp"
+      ],
+      "description": "De Samsung WindFree zorgt voor verkoeling zonder directe luchtstroom via 23.000 micro gaatjes.",
+      "features": [
+        "WindFree koeling zonder tocht",
+        "AI Auto Comfort",
+        "PM 1.0 Filter",
+        "SmartThings app besturing"
+      ],
+      "capacities": ["2.5 kW", "3.5 kW", "5.0 kW", "6.5 kW"],
+      "seo": {
+        "title": "Samsung WindFree Airco",
+        "description": "Innovatieve Samsung WindFree zonder directe luchtstroom. Comfort zonder tocht met AI technologie."
+      }
+    },
+    {
+      "id": "samsung-luzon",
+      "brand": "Samsung",
+      "model": "Luzon",
+      "category": "split-airco",
+      "image": "/images/samsung/luzon/Luzon_S2_Front_Web_RGB.webp",
+      "gallery": [
+        "/images/samsung/luzon/Luzon_S2_Front_Web_RGB.webp",
+        "/images/samsung/luzon/Luzon_S2_Left_Web_RGB.webp",
+        "/images/samsung/luzon/Luzon_S2_Right_Web_RGB.webp",
+        "/images/samsung/luzon/Samsung RAC Luzon_Sfeerbeeld_001.webp",
+        "/images/samsung/luzon/Samsung RAC Luzon_Sfeerbeeld_002.webp"
+      ],
+      "description": "De Samsung Luzon is een betaalbare airco met betrouwbare prestaties en moderne technologie.",
+      "features": [
+        "Fast Cooling technologie",
+        "HD Filter met anti-bacteriële coating",
+        "Good Sleep modus",
+        "2-Way Auto Swing"
+      ],
+      "capacities": ["2.5 kW", "3.5 kW", "5.0 kW"],
+      "seo": {
+        "title": "Samsung Luzon Airco",
+        "description": "Betaalbare Samsung Luzon met Fast Cooling en HD Filter. Betrouwbare prestaties voor ieder budget."
+      }
+    },
+    {
+      "id": "mitsubishi-heavy-srk-zs",
+      "brand": "Mitsubishi Heavy Industries",
+      "model": "SRK-ZS Premium",
+      "category": "split-airco",
+      "image": "/images/Mitsubishi heavy indus/srk50zs-wf-wit-single-split-airco-wandmodel-2.5-3.5-5kw-510x510.webp",
+      "gallery": [
+        "/images/Mitsubishi heavy indus/srk50zs-wf-wit-single-split-airco-wandmodel-2.5-3.5-5kw-510x510.webp",
+        "/images/Mitsubishi heavy indus/srk50zs-wf-wit-single-split-airco-wandmodel-2.5-3.5-5kw-1.webp",
+        "/images/Mitsubishi heavy indus/Mitsubishi-titanium-zs-wft.webp",
+        "/images/Mitsubishi heavy indus/ZSX-T-510x512.webp"
+      ],
+      "description": "De Mitsubishi Heavy Industries SRK-ZS serie biedt premium comfort met fluisterstille werking.",
+      "features": [
+        "Silent Mode 19 dB(A)",
+        "Allergen Clear systeem",
+        "3D Auto luchtstroom",
+        "Jet Air functie"
+      ],
+      "capacities": ["2.5 kW", "3.5 kW", "5.0 kW", "6.0 kW"],
+      "seo": {
+        "title": "Mitsubishi Heavy Industries SRK-ZS Airco",
+        "description": "Premium Mitsubishi Heavy SRK-ZS met Allergen Clear en Silent Mode. Fluisterstil en krachtig."
+      }
+    },
+    {
+      "id": "toshiba-haori",
+      "brand": "Toshiba",
+      "model": "Haori",
+      "category": "split-airco",
+      "image": "/images/Haori-zwart-vooraanzicht_3_11zon.webp",
+      "gallery": [
+        "/images/Haori-zwart-vooraanzicht_3_11zon.webp",
+        "/images/Haori-zwart-links_1_11zon.webp",
+        "/images/Haori-zwart-rechts_2_11zon.webp",
+        "/images/Haori-grijs-links_19_11zon.webp",
+        "/images/Haori-blauw-links_16_11zon.webp",
+        "/images/Haori-bruin-links_17_11zon.webp",
+        "/images/Haori-creme-links_18_11zon.webp"
+      ],
+      "description": "De Toshiba Haori combineert Japans design met een verwisselbaar stoffront voor een persoonlijke touch.",
+      "features": [
+        "Verwisselbaar design front",
+        "Ultra Pure filter systeem",
+        "HADA Care luchtstroom",
+        "Quiet Mode 19 dB(A)"
+      ],
+      "capacities": ["2.5 kW", "3.5 kW", "4.2 kW"],
+      "seo": {
+        "title": "Toshiba Haori Design Airco",
+        "description": "Unieke Toshiba Haori met verwisselbaar stoffront. Japans design meets moderne technologie."
+      }
+    },
+    {
+      "id": "toshiba-daiseikai",
+      "brand": "Toshiba",
+      "model": "Daiseikai 9",
+      "category": "split-airco",
+      "image": "/images/Daiseikai 10-Wit-vooraanzicht_4_11zon.webp",
+      "gallery": [
+        "/images/Daiseikai 10-Wit-vooraanzicht_4_11zon.webp",
+        "/images/Daiseikai 10-Wit-rechts_3_11zon.webp",
+        "/images/Daiseikai 10-Hout-vooraanzicht_2_11zon.webp",
+        "/images/Daiseikai 10-Hout-sfeerfoto_1_11zon.webp",
+        "/images/Daiseikai 10-Hout-links-open_5_11zon.webp"
+      ],
+      "description": "De Toshiba Daiseikai 9 is het topmodel met superieure energieprestaties en geavanceerde functies.",
+      "features": [
+        "R32 koudemiddel",
+        "Plasma filter luchtzuivering",
+        "Hi Power modus",
+        "8°C verwarmingsmodus"
+      ],
+      "capacities": ["2.5 kW", "3.5 kW", "4.6 kW", "5.0 kW"],
+      "seo": {
+        "title": "Toshiba Daiseikai 9 Premium Airco",
+        "description": "Top-of-the-line Toshiba Daiseikai 9 met plasma filter en Hi Power. Maximum prestaties en efficiëntie."
+      }
+    },
+    {
+      "id": "toshiba-kazumi",
+      "brand": "Toshiba",
+      "model": "Kazumi",
+      "category": "split-airco",
+      "image": "/images/Kazumi-plus-white-vooraanzicht_8_11zon.webp",
+      "gallery": [
+        "/images/Kazumi-plus-white-vooraanzicht_8_11zon.webp",
+        "/images/Kazumi-plus-white-rechts_7_11zon.webp",
+        "/images/Kazumi-plus-Black-vooraanzicht_6_11zon.webp",
+        "/images/Kazumi-plus-Black-links-open_4_11zon.webp",
+        "/images/Kazumi-plus-Black-rechts-open_5_11zon.webp"
+      ],
+      "description": "De Toshiba Kazumi biedt uitstekende prijs-kwaliteit met moderne technologie en stijlvol design.",
+      "features": [
+        "Pure Mode luchtzuivering",
+        "ECO Mode energiebesparing",
+        "Fireplace functie",
+        "WiFi ready"
+      ],
+      "capacities": ["2.5 kW", "3.5 kW", "5.0 kW"],
+      "seo": {
+        "title": "Toshiba Kazumi Airco",
+        "description": "Stijlvolle Toshiba Kazumi met Pure Mode en ECO functie. Moderne technologie voor ieder interieur."
+      }
+    },
+    {
+      "id": "toshiba-seiya",
+      "brand": "Toshiba",
+      "model": "Seiya",
+      "category": "split-airco",
+      "image": "/images/Seiya-plus-wit-vooraanzicht_12_11zon.webp",
+      "gallery": [
+        "/images/Seiya-plus-wit-vooraanzicht_12_11zon.webp",
+        "/images/Seiya-plus-wit-links_9_11zon.webp",
+        "/images/Seiya-plus-wit-rechts_11_11zon.webp",
+        "/images/Seiya-plus-wit-onderaanzicht-open_10_11zon.webp"
+      ],
+      "description": "De Toshiba Seiya is een instapmodel met betrouwbare prestaties en essentiële functies.",
+      "features": [
+        "IAQ filter systeem",
+        "Preset modus",
+        "Timer functie",
+        "Quiet operation"
+      ],
+      "capacities": ["2.0 kW", "2.5 kW", "3.3 kW", "4.2 kW", "5.0 kW"],
+      "seo": {
+        "title": "Toshiba Seiya Airco",
+        "description": "Betrouwbare Toshiba Seiya met IAQ filter. Instapmodel met alle essentiële functies."
+      }
+    },
+    {
+      "id": "tosot-pular",
+      "brand": "Tosot",
+      "model": "Pular",
+      "category": "split-airco",
+      "image": "/images/568-Pular-indoor-vooraanzicht.webp",
+      "gallery": [
+        "/images/568-Pular-indoor-vooraanzicht.webp",
+        "/images/570-Pular-indoor-right.webp"
+      ],
+      "description": "De Tosot Pular biedt premium kwaliteit met een uitstekende prijs-prestatieverhouding.",
+      "features": [
+        "7 Shield Protection",
+        "I-Feel functie",
+        "Turbo Mode",
+        "Self-clean technologie"
+      ],
+      "capacities": ["2.6 kW", "3.5 kW", "5.3 kW", "7.0 kW"],
+      "seo": {
+        "title": "Tosot Pular Airco",
+        "description": "Premium Tosot Pular met 7 Shield Protection. Uitstekende prijs-kwaliteit verhouding."
+      }
+    },
+    {
+      "id": "tosot-clivia",
+      "brand": "Tosot",
+      "model": "Clivia",
+      "category": "split-airco",
+      "image": "/images/724-clivia-wit-vooraanzicht.webp",
+      "gallery": [
+        "/images/724-clivia-wit-vooraanzicht.webp",
+        "/images/723-clivia-wit-schuin.webp",
+        "/images/727-clivia-wit-zijkant.webp",
+        "/images/712-clivia-zwart-vooraanzicht.webp",
+        "/images/711-clivia-zwart-schuin.webp",
+        "/images/710-clivia-zwart-zijkant.webp"
+      ],
+      "description": "De Tosot Clivia combineert modern design met betrouwbare prestaties voor dagelijks comfort.",
+      "features": [
+        "G10 Inverter technologie",
+        "Golden Fin coating",
+        "Sleep Mode",
+        "WiFi besturing optioneel"
+      ],
+      "capacities": ["2.6 kW", "3.5 kW", "5.3 kW"],
+      "seo": {
+        "title": "Tosot Clivia Airco",
+        "description": "Moderne Tosot Clivia met G10 Inverter. Betrouwbaar comfort met WiFi opties."
+      }
+    },
+    {
+      "id": "tosot-cosmo",
+      "brand": "Tosot",
+      "model": "Cosmo",
+      "category": "split-airco",
+      "image": "/images/787-cosmo-indoor-vooraanzicht.webp",
+      "gallery": [
+        "/images/787-cosmo-indoor-vooraanzicht.webp",
+        "/images/788-cosmo-indoor.webp",
+        "/images/789-cosmo-indoor.webp"
+      ],
+      "description": "De Tosot Cosmo is een betaalbaar instapmodel met alle basisfuncties voor comfortabele klimaatbeheersing.",
+      "features": [
+        "Intelligent defrost",
+        "Auto-restart functie",
+        "Timer 24 uur",
+        "Healthy filters"
+      ],
+      "capacities": ["2.5 kW", "3.5 kW", "5.0 kW"],
+      "seo": {
+        "title": "Tosot Cosmo Airco",
+        "description": "Betaalbare Tosot Cosmo met intelligent defrost. Instapmodel met complete basisfuncties."
+      }
+    },
+    {
+      "id": "lg-mobiele-airco",
+      "brand": "LG",
+      "model": "Mobiele Airco",
+      "category": "mobiele-airco",
+      "image": "/images/mobiele airco/lg mobiele airco/lg-mobiele-airco-staycoolairco.webp",
+      "gallery": [
+        "/images/mobiele airco/lg mobiele airco/lg-mobiele-airco-staycoolairco.webp",
+        "/images/mobiele airco/lg mobiele airco/lg-mobiele-airco-staycoolairco-1.webp",
+        "/images/mobiele airco/lg mobiele airco/lg-mobiele-airco-staycoolairco-2.webp",
+        "/images/mobiele airco/lg mobiele airco/lg-mobiele-airco-staycoolairco-3.webp",
+        "/images/mobiele airco/lg mobiele airco/lg-mobiele-airco-staycoolairco-4.webp",
+        "/images/mobiele airco/lg mobiele airco/lg-mobiele-airco-staycoolairco-5.webp"
+      ],
+      "description": "LG mobiele airconditioners voor flexibele koeling zonder vaste installatie.",
+      "features": [
+        "Dual Inverter technologie",
+        "Auto evaporation systeem",
+        "4-in-1 functionaliteit",
+        "LCD afstandsbediening"
+      ],
+      "capacities": ["2.6 kW", "3.5 kW", "4.1 kW"],
+      "seo": {
+        "title": "LG Mobiele Airco",
+        "description": "Flexibele LG mobiele airco's met Dual Inverter. Geen installatie nodig, direct comfort."
+      }
+    },
+    {
+      "id": "tosot-mobiele-airco",
+      "brand": "Tosot",
+      "model": "Mobiele Airco",
+      "category": "mobiele-airco",
+      "image": "/images/mobiele airco/tosot mobiele airco/tosot-mobiele-airco-staycoolairco-1.webp",
+      "gallery": [
+        "/images/mobiele airco/tosot mobiele airco/tosot-mobiele-airco-staycoolairco-1.webp",
+        "/images/mobiele airco/tosot mobiele airco/tosot-mobiele-airco-staycoolairco-2.webp",
+        "/images/mobiele airco/tosot mobiele airco/tosot-mobiele-airco-staycoolairco-3.webp",
+        "/images/mobiele airco/tosot mobiele airco/tosot-mobiele-airco-staycoolairco-4.webp",
+        "/images/mobiele airco/tosot mobiele airco/tosot-mobiele-airco-staycoolairco-5.webp",
+        "/images/mobiele airco/tosot mobiele airco/tosot-mobiele-airco-staycoolairco-6.webp"
+      ],
+      "description": "Tosot mobiele airconditioners voor directe verkoeling waar u maar wilt.",
+      "features": [
+        "3-in-1 functionaliteit",
+        "Follow Me functie",
+        "24-uurs timer",
+        "Uitschuifbare slang"
+      ],
+      "capacities": ["2.6 kW", "3.5 kW"],
+      "seo": {
+        "title": "Tosot Mobiele Airco",
+        "description": "Praktische Tosot mobiele airco's. Direct verkoeling zonder installatie."
+      }
+    },
+    {
+      "id": "airco-cover-wit",
+      "brand": "Universeel",
+      "model": "Airco Cover Wit",
+      "category": "accessoires",
+      "image": "/images/airco-covers/aircocover-wit-voorkant.webp",
+      "gallery": [
+        "/images/airco-covers/aircocover-wit-voorkant.webp",
+        "/images/airco-covers/aircocover-wit-zijkant.webp",
+        "/images/airco-covers/aircocover-wit-binnenkant.webp",
+        "/images/airco-covers/aircocover-wit.webp"
+      ],
+      "description": "Witte beschermkap voor buitenunits, beschermt tegen weersinvloeden en verlengt de levensduur.",
+      "features": [
+        "UV-bestendig materiaal",
+        "Ventilatieopeningen",
+        "Universele pasvorm",
+        "Eenvoudige montage"
+      ],
+      "capacities": ["Small", "Medium", "Large"],
+      "seo": {
+        "title": "Witte Airco Cover",
+        "description": "Beschermkap voor airco buitenunit in wit. UV-bestendig en weerproof."
+      }
+    },
+    {
+      "id": "airco-cover-antraciet",
+      "brand": "Universeel",
+      "model": "Airco Cover Antraciet",
+      "category": "accessoires",
+      "image": "/images/airco-covers/aircocover-antraciet-vooraanzicht.webp",
+      "gallery": [
+        "/images/airco-covers/aircocover-antraciet-vooraanzicht.webp",
+        "/images/airco-covers/aircocover-antraciet-zijkant.webp",
+        "/images/airco-covers/aircocover-antraciet-binnenkant.webp",
+        "/images/airco-covers/aircocover-antraciet.webp"
+      ],
+      "description": "Antraciet beschermkap voor buitenunits, stijlvol en beschermend tegen alle weersomstandigheden.",
+      "features": [
+        "Premium coating",
+        "Corrosiebestendig",
+        "Modern design",
+        "10 jaar garantie"
+      ],
+      "capacities": ["Small", "Medium", "Large"],
+      "seo": {
+        "title": "Antraciet Airco Cover",
+        "description": "Stijlvolle beschermkap voor airco buitenunit in antraciet. Premium kwaliteit met garantie."
+      }
+    }
+  ],
+  "categories": {
+    "split-airco": {
+      "name": "Split Airco's",
+      "description": "Vaste split airconditioners voor optimale klimaatbeheersing"
+    },
+    "mobiele-airco": {
+      "name": "Mobiele Airco's",
+      "description": "Verplaatsbare airconditioners voor flexibele koeling"
+    },
+    "accessoires": {
+      "name": "Accessoires",
+      "description": "Beschermkappen en toebehoren voor uw airco"
+    }
+  },
+  "brands": {
+    "Daikin": {
+      "description": "Japanse kwaliteit en innovatie"
+    },
+    "LG": {
+      "description": "Slimme technologie en design"
+    },
+    "Samsung": {
+      "description": "Innovatieve comfort oplossingen"
+    },
+    "Mitsubishi Heavy Industries": {
+      "description": "Robuust en betrouwbaar"
+    },
+    "Toshiba": {
+      "description": "Japanse precisie en efficiëntie"
+    },
+    "Tosot": {
+      "description": "Uitstekende prijs-kwaliteit"
+    },
+    "Universeel": {
+      "description": "Accessoires voor alle merken"
+    }
+  }
+}

@@ -84,13 +84,14 @@ export function HeroStayCool() {
       <div className="absolute inset-0 bg-grid-white/[0.05] bg-grid-8" />
       
       {/* Orange ribbon */}
-      <div className="absolute right-0 top-8 z-20 -rotate-3 transform">
-        <div className="bg-orange-500 px-8 py-2 shadow-lg">
+      <div className="absolute right-8 top-8 sm:right-12 sm:top-12 lg:right-16 lg:top-16 xl:right-24 z-20 -rotate-12 transform">
+        <div className="bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-3 shadow-xl rounded-sm">
           <p className="flex items-center gap-2 text-sm font-bold text-white">
             <Clock className="h-4 w-4" />
             Binnen 24u reactie
           </p>
         </div>
+        <div className="absolute -bottom-1 left-0 right-0 h-1 bg-orange-700/50 blur-sm" />
       </div>
 
       <div className="container relative z-10">
@@ -163,7 +164,7 @@ export function HeroStayCool() {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="w-full border-white text-white hover:bg-white hover:text-gray-900 sm:w-auto"
+                  className="w-full border-white text-white hover:bg-white hover:text-gray-900 sm:w-auto font-semibold bg-white/10 backdrop-blur-sm"
                 >
                   <Phone className="mr-2 h-5 w-5" />
                   Bel: 046 202 1430
