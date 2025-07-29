@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "sonner"
 import { Loader2 } from "lucide-react"
+import { trackFormSubmission, trackPixelFormSubmission } from "@/lib/email"
 
 interface ContactFormProps {
   cityName?: string
@@ -42,23 +43,10 @@ export function ContactForm({ cityName }: ContactFormProps) {
         throw new Error('Failed to send message')
       }
 
-      // Track analytics if available
-      if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', 'form_submit', {
-          event_category: 'engagement',
-          event_label: 'contact_form',
-          value: 1
-        })
-      }
-
-      // Track Facebook Pixel if available
-      if (typeof window !== 'undefined' && window.fbq) {
-        window.fbq('track', 'Lead', {
-          content_name: 'contact_form',
-          city: formData.city,
-          status: 'success'
-        })
-      }
+      // Track analytics
+      const formType = cityName ? `city_${cityName.toLowerCase()}_form` : 'contact_form';
+      trackFormSubmission(formType, true);
+      trackPixelFormSubmission(formType, true);
 
       toast.success("Uw aanvraag is succesvol verzonden!")
       setFormData({
@@ -76,6 +64,9 @@ export function ContactForm({ cityName }: ContactFormProps) {
         router.push('/tot-snel')
       }, 1000)
     } catch (error) {
+      const formType = cityName ? `city_${cityName.toLowerCase()}_form` : 'contact_form';
+      trackFormSubmission(formType, false);
+      trackPixelFormSubmission(formType, false);
       toast.error("Er ging iets mis. Probeer het later opnieuw.")
     } finally {
       setIsSubmitting(false)
@@ -119,7 +110,7 @@ export function ContactForm({ cityName }: ContactFormProps) {
       />
       <Button 
         type="submit" 
-        className="w-full bg-green-600 hover:bg-green-700" 
+        className="w-full bg-orange-500 hover:bg-orange-500/90" 
         disabled={isSubmitting}
       >
         {isSubmitting ? (

@@ -7,8 +7,17 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Send } from 'lucide-react';
 import { toast } from 'sonner';
+import { trackFormSubmission, trackPixelFormSubmission } from '@/lib/email';
 
-export default function ContactForm() {
+interface ContactFormProps {
+  formType?: string;
+  redirectUrl?: string;
+}
+
+export default function ContactForm({ 
+  formType = 'contact_form',
+  redirectUrl = '/tot-snel'
+}: ContactFormProps = {}) {
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: '',
@@ -46,22 +55,9 @@ export default function ContactForm() {
         throw new Error('Failed to send message');
       }
 
-      // Track analytics if available
-      if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', 'form_submit', {
-          event_category: 'engagement',
-          event_label: 'contact_form',
-          value: 1
-        });
-      }
-
-      // Track Facebook Pixel if available
-      if (typeof window !== 'undefined' && window.fbq) {
-        window.fbq('track', 'Lead', {
-          content_name: 'contact_form',
-          status: 'success'
-        });
-      }
+      // Track analytics
+      trackFormSubmission(formType, true);
+      trackPixelFormSubmission(formType, true);
 
       toast.success('Bericht succesvol verzonden!');
       setStatus('success');
@@ -69,12 +65,16 @@ export default function ContactForm() {
       
       // Redirect to thank you page
       setTimeout(() => {
-        router.push('/tot-snel');
+        router.push(redirectUrl);
       }, 1000);
     } catch (error) {
       console.error('Error:', error);
       toast.error('Er is iets misgegaan. Probeer het later opnieuw.');
       setStatus('error');
+      
+      // Track failure
+      trackFormSubmission(formType, false);
+      trackPixelFormSubmission(formType, false);
     }
   };
 
@@ -150,7 +150,7 @@ export default function ContactForm() {
       </Button>
 
       {status === 'success' && (
-        <p className="text-green-600 text-center">
+        <p className="text-orange-500 text-center">
           Uw bericht is succesvol verzonden. We nemen zo spoedig mogelijk contact met u op.
         </p>
       )}
