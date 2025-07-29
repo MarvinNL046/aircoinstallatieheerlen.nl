@@ -15,7 +15,7 @@ export function BrandTechnology({ brand }: BrandTechnologyProps) {
       <div className="space-y-6">
         {technology.map((tech, index) => (
           <div key={index}>
-            <h3 className="font-semibold text-blue-600 mb-2">{tech.name}</h3>
+            <h3 className="font-semibold text-blue mb-2">{tech.name}</h3>
             <p className="text-muted-foreground mb-4">{tech.description}</p>
             <ul className="list-disc pl-5 space-y-1">
               {tech.benefits.map((benefit, benefitIndex) => (

@@ -19,7 +19,7 @@ export function MaintenanceImportance() {
       {benefits.map((benefit, index) => (
         <div key={index} className="bg-blue-50 p-4 rounded-lg text-center">
           <h3 className="font-semibold mb-2">{benefit.title}</h3>
-          <p className="text-sm text-blue-600">{benefit.description}</p>
+          <p className="text-sm text-blue">{benefit.description}</p>
         </div>
       ))}
     </div>

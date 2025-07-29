@@ -17,6 +17,7 @@ const config: Config = {
     },
     extend: {
       colors: {
+        /* Component colors */
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -50,6 +51,31 @@ const config: Config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        /* StayCool brand colors */
+        orange: {
+          DEFAULT: 'hsl(var(--orange))',
+          500: '#F97316',
+        },
+        blue: {
+          light: 'hsl(var(--blue-light))',
+          DEFAULT: 'hsl(var(--blue))',
+          dark: 'hsl(var(--blue-dark))',
+          500: '#2563EB',
+          600: '#1D4ED8',
+          800: '#1E3A8A',
+        },
+        gray: {
+          50: 'hsl(var(--gray-50))',
+          100: 'hsl(var(--gray-100))',
+          200: 'hsl(var(--gray-200))',
+          300: 'hsl(var(--gray-300))',
+          400: 'hsl(var(--gray-400))',
+          500: 'hsl(var(--gray-500))',
+          600: 'hsl(var(--gray-600))',
+          700: 'hsl(var(--gray-700))',
+          800: 'hsl(var(--gray-800))',
+          900: 'hsl(var(--gray-900))',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -69,6 +95,14 @@ const config: Config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      fontFamily: {
+        sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+      },
+      fontWeight: {
+        light: '300',
+        normal: '400',
+        semibold: '600',
       },
     },
   },

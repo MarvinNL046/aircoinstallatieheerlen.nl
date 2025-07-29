@@ -16,11 +16,11 @@ export function VoordelenConclusie() {
         <p className="font-semibold mb-2">Interesse in een airconditioning?</p>
         <p>
           Wilt u ook profiteren van deze voordelen? Neem dan{" "}
-          <Link href="/contact" className="text-blue-600 hover:underline">
+          <Link href="/contact" className="text-blue hover:underline">
             contact met ons op
           </Link>{" "}
           voor een vrijblijvend adviesgesprek of{" "}
-          <Link href="/offerte" className="text-blue-600 hover:underline">
+          <Link href="/offerte" className="text-blue hover:underline">
             vraag direct een offerte aan
           </Link>.
         </p>

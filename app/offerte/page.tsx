@@ -4,8 +4,21 @@ import { PriceCalculator } from "@/components/calculators/price-calculator"
 import { ContactForm } from "@/components/contact-form"
 
 export const metadata: Metadata = {
-  title: "Offerte Aanvragen | Airco Offerte Limburg",
-  description: "Vraag een vrijblijvende offerte aan voor uw airconditioning project. Ontvang binnen 24 uur een offerte op maat.",
+  title: "💰 Gratis Airco Offerte Heerlen | Binnen 24u | StayCool",
+  description: "Gratis airco offerte Heerlen & Parkstad ⭐ 4.7/5. Split airco vanaf €11/mnd. Binnen 24u reactie op uw aanvraag. Vraag nu aan: 046-202-1430!",
+  keywords: [
+    'airco offerte heerlen',
+    'gratis airco offerte',
+    'split airco prijzen',
+    'airco kosten heerlen',
+    'airco offerte aanvragen limburg'
+  ],
+  openGraph: {
+    title: "💰 Gratis Airco Offerte Heerlen | Binnen 24u",
+    description: "Vraag gratis airco offerte aan bij StayCool ⭐ 4.7/5. Split airco vanaf €11/mnd. Binnen 24u reactie!",
+    type: 'website',
+    locale: 'nl_NL'
+  }
 }
 
 export default function OffertePage() {

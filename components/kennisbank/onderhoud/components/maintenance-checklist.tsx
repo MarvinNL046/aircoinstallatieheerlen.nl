@@ -24,7 +24,7 @@ export function MaintenanceChecklist() {
 
   return (
     <div className="overflow-x-auto mb-8">
-      <table className="min-w-full border-collapse border border-gray-200">
+      <table className="min-w-full border-collapse border border-border">
         <thead className="bg-gray-50">
           <tr>
             <th className="border p-3 text-left">Onderhoudstaak</th>

@@ -43,7 +43,7 @@ export default async function CitiesPage() {
       icon: Wrench,
       title: "Onderhoud & Service",
       description: "Regelmatig onderhoud en snelle service bij storingen",
-      features: ["24/7 service", "Onderhoudscontracten", "Alle merken"]
+      features: ["Snelle service", "Onderhoudscontracten", "Alle merken"]
     }
   ]
 
@@ -66,7 +66,7 @@ export default async function CitiesPage() {
             <Card key={index} className="p-6">
               <div className="flex flex-col h-full">
                 <div className="flex items-start gap-4 mb-4">
-                  <Icon className="h-8 w-8 text-blue-600" />
+                  <Icon className="h-8 w-8 text-blue" />
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                     <p className="text-muted-foreground">{service.description}</p>
@@ -75,7 +75,7 @@ export default async function CitiesPage() {
                 <ul className="mt-auto space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <CheckCircle className="h-4 w-4 text-orange-500" />
                       <span className="text-sm">{feature}</span>
                     </li>
                   ))}
@@ -99,7 +99,7 @@ export default async function CitiesPage() {
                 <Link key={city.slug} href={`/steden/${city.slug}`}>
                   <Card className="p-6 hover:shadow-lg transition-shadow h-full">
                     <div className="flex items-start gap-3">
-                      <MapPin className="h-5 w-5 text-blue-600 mt-1" />
+                      <MapPin className="h-5 w-5 text-blue mt-1" />
                       <div>
                         <h3 className="text-xl font-semibold mb-2">
                           Airco Installatie {city.city}
@@ -110,7 +110,7 @@ export default async function CitiesPage() {
                         <p className="text-sm text-muted-foreground">
                           Postcodes: {city.postal_codes}
                         </p>
-                        <div className="mt-4 text-sm text-blue-600">
+                        <div className="mt-4 text-sm text-blue">
                           Bekijk airco services in {city.city} →
                         </div>
                       </div>
@@ -129,21 +129,21 @@ export default async function CitiesPage() {
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex items-start gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600 text-white">✓</span>
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue text-white">✓</span>
             <div>
               <h3 className="font-semibold mb-1">Lokale Expertise</h3>
               <p className="text-sm text-muted-foreground">Kennis van lokale regelgeving en omstandigheden</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600 text-white">✓</span>
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue text-white">✓</span>
             <div>
               <h3 className="font-semibold mb-1">Snelle Service</h3>
               <p className="text-sm text-muted-foreground">Binnen 24 uur ter plaatse in heel Limburg</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600 text-white">✓</span>
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue text-white">✓</span>
             <div>
               <h3 className="font-semibold mb-1">Erkend Installateur</h3>
               <p className="text-sm text-muted-foreground">Gecertificeerd en volledig verzekerd</p>

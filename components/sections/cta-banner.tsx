@@ -29,7 +29,7 @@ export function CTABanner({ theme = "light" }: CTABannerProps) {
                 Bel Direct
               </Link>
             </Button>
-            <Button size="sm" className="bg-green-600 hover:bg-green-700" asChild>
+            <Button size="sm" className="bg-orange-500 hover:bg-orange-500/90" asChild>
               <Link href="/offerte">
                 <Calendar className="mr-2 h-4 w-4" />
                 Plan Afspraak

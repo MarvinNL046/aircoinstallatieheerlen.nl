@@ -22,7 +22,7 @@ export function SystemTypes() {
     <div className="space-y-4 mb-8">
       {systems.map((system, index) => (
         <div key={index} className="bg-white shadow rounded-lg p-4">
-          <h3 className="font-semibold text-blue-600 mb-2">{system.title}</h3>
+          <h3 className="font-semibold text-blue mb-2">{system.title}</h3>
           <p>{system.description}</p>
         </div>
       ))}

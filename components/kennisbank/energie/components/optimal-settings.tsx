@@ -24,7 +24,7 @@ export function OptimalSettings() {
 
   return (
     <div className="overflow-x-auto mb-8">
-      <table className="min-w-full border-collapse border border-gray-200">
+      <table className="min-w-full border-collapse border border-border">
         <thead className="bg-gray-50">
           <tr>
             <th className="border p-3 text-left">Instelling</th>
@@ -36,7 +36,7 @@ export function OptimalSettings() {
           {settings.map((item, index) => (
             <tr key={index}>
               <td className="border p-3 font-medium">{item.setting}</td>
-              <td className="border p-3 text-blue-600">{item.optimal}</td>
+              <td className="border p-3 text-blue">{item.optimal}</td>
               <td className="border p-3">{item.description}</td>
             </tr>
           ))}

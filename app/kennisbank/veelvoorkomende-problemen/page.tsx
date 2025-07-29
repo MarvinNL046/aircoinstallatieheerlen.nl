@@ -68,7 +68,7 @@ export default function VeelvoorkomendeProblemenPage() {
 
         <h3>Wat u zelf kunt doen</h3>
         <ol>
-          <li>Controleer en reinig de luchtfilters (zie ons <Link href="/kennisbank/airco-luchtfilter-onderhoud" className="text-blue-600 hover:underline">artikel over filteronderhoud</Link>)</li>
+          <li>Controleer en reinig de luchtfilters (zie ons <Link href="/kennisbank/airco-luchtfilter-onderhoud" className="text-blue hover:underline">artikel over filteronderhoud</Link>)</li>
           <li>Controleer de temperatuurinstelling en zorg dat deze correct is</li>
           <li>Zorg dat er geen meubels of gordijnen de luchtstroom van de binnenunit blokkeren</li>
           <li>Verwijder bladeren, vuil of andere obstakels rond de buitenunit</li>
@@ -229,7 +229,7 @@ export default function VeelvoorkomendeProblemenPage() {
           <div className="mt-4">
             <Link 
               href="/contact" 
-              className="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
+              className="inline-block bg-blue text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
             >
               Service Aanvragen
             </Link>

@@ -1,18 +1,47 @@
 import { Metadata } from "next"
-import { HeroSection } from "@/components/sections/hero-section"
+import { HeroSection } from "@/components/sections/hero"
 import { FeaturesSection } from "@/components/sections/features-section"
 import { ServicesSection } from "@/components/sections/services-section"
+import { WhyUsSection } from "@/components/sections/why-us"
+import { BrandLogosSection } from "@/components/sections/brand-logos"
 import { TestimonialsSection } from "@/components/sections/testimonials"
 import { CTASection } from "@/components/sections/cta-section"
 import { CTABanner } from "@/components/sections/cta-banner"
+import { CTABanner as NewCTABanner } from "@/components/cta/cta-banner-variants"
 import { generateOrganizationSchema } from "@/lib/schema"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: 'StayCool Airco Heerlen | #1 in Airconditioning ✓',
-  description: 'Dé airco specialist van Heerlen! Professionele airco installatie voor woning en bedrijf door StayCool Airco. ✓ Gratis offerte ✓ Erkend installateur ✓ Alle topmerken ✓ 5 jaar garantie. Bel: 046 202 1430',
+  title: '✨ Airco Heerlen #1 | Split Airco vanaf €11/mnd | 4.7⭐',
+  description: 'Airco installatie Heerlen & Parkstad door StayCool. Erkend split airco specialist met 4.7/5 sterren! Klimaatbeheersing voor woning & bedrijf. Gratis advies: 046-202-1430',
+  keywords: [
+    'airco heerlen',
+    'airco installatie heerlen',
+    'split airco heerlen',
+    'airco parkstad',
+    'klimaatbeheersing heerlen',
+    'airco service limburg'
+  ],
   alternates: {
     canonical: 'https://aircoinstallatieheerlen.nl'
+  },
+  openGraph: {
+    title: '✨ Airco Heerlen #1 | Split Airco vanaf €11/mnd | 4.7⭐',
+    description: 'Airco installatie Heerlen & Parkstad door StayCool. Erkend split airco specialist met 4.7/5 sterren! Klimaatbeheersing voor woning & bedrijf.',
+    type: 'website',
+    locale: 'nl_NL',
+    url: 'https://aircoinstallatieheerlen.nl',
+    images: [{
+      url: '/opengraph-image',
+      width: 1200,
+      height: 630,
+      alt: 'StayCool Airco Heerlen - Split Airco Specialist'
+    }]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '✨ Airco Heerlen #1 | Split Airco vanaf €11/mnd',
+    description: 'Airco installatie Heerlen door StayCool ⭐ 4.7/5. Erkend specialist in Parkstad & Zuid-Limburg. Gratis advies!'
   }
 }
 
@@ -32,7 +61,10 @@ export default function HomePage() {
         <HeroSection />
         <FeaturesSection />
         <ServicesSection />
-        <section className="py-16 bg-gray-50">
+        <NewCTABanner variant="full" theme="gradient" showTrust={true} />
+        <WhyUsSection />
+        <BrandLogosSection />
+        <section className="py-16 bg-white">
           <div className="container">
             <h2 className="text-3xl font-bold text-center mb-8">Bekijk Onze Bedrijfsvideo</h2>
             <div className="max-w-3xl mx-auto aspect-video">
@@ -53,7 +85,7 @@ export default function HomePage() {
                   href="https://staycoolairco.nl" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
+                  className="text-blue hover:underline"
                 >
                   Bezoek onze hoofdwebsite voor meer informatie
                 </a>

@@ -54,7 +54,7 @@ export function CookieConsent() {
           </div>
           <button
             onClick={() => setIsVisible(false)}
-            className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
+            className="absolute top-4 right-4 text-gray-400 hover:text-muted-foreground"
             aria-label="Sluit cookie melding"
           >
             <X className="h-4 w-4" />

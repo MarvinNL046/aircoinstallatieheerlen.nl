@@ -10,23 +10,23 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-white border-b border-border sticky top-0 z-50">
       <nav className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold text-blue-600">
+          <Link href="/" className="text-xl font-bold text-blue">
             Airco Offerte Limburg
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/diensten" className="text-gray-600 hover:text-blue-600">
+            <Link href="/diensten" className="text-muted-foreground hover:text-blue">
               Diensten
             </Link>
-            <Link href="/over-ons" className="text-gray-600 hover:text-blue-600">
+            <Link href="/over-ons" className="text-muted-foreground hover:text-blue">
               Over Ons
             </Link>
-            <Link href="/contact" className="text-gray-600 hover:text-blue-600">
+            <Link href="/contact" className="text-muted-foreground hover:text-blue">
               Contact
             </Link>
             <ThemeToggle />
@@ -58,19 +58,19 @@ export default function Header() {
             <div className="flex flex-col space-y-4">
               <Link
                 href="/diensten"
-                className="text-gray-600 hover:text-blue-600 px-2"
+                className="text-muted-foreground hover:text-blue px-2"
               >
                 Diensten
               </Link>
               <Link
                 href="/over-ons"
-                className="text-gray-600 hover:text-blue-600 px-2"
+                className="text-muted-foreground hover:text-blue px-2"
               >
                 Over Ons
               </Link>
               <Link
                 href="/contact"
-                className="text-gray-600 hover:text-blue-600 px-2"
+                className="text-muted-foreground hover:text-blue px-2"
               >
                 Contact
               </Link>

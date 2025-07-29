@@ -44,6 +44,7 @@ export function ContactForm() {
         value={formData.name}
         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         required
+        className="focus:border-orange-500 focus:ring-orange-500"
       />
       <Input
         type="email"
@@ -51,6 +52,7 @@ export function ContactForm() {
         value={formData.email}
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         required
+        className="focus:border-orange-500 focus:ring-orange-500"
       />
       <Input
         type="tel"
@@ -58,6 +60,7 @@ export function ContactForm() {
         value={formData.phone}
         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
         required
+        className="focus:border-orange-500 focus:ring-orange-500"
       />
       <Textarea
         placeholder="Uw bericht"
@@ -65,10 +68,11 @@ export function ContactForm() {
         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
         required
         rows={4}
+        className="focus:border-orange-500 focus:ring-orange-500"
       />
       <Button 
         type="submit" 
-        className="w-full bg-green-600 hover:bg-green-700" 
+        className="w-full bg-orange-500 hover:bg-orange-600 text-white" 
         disabled={isSubmitting}
       >
         {isSubmitting ? (

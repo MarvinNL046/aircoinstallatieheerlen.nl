@@ -13,7 +13,7 @@ export function Recommendation() {
           <span className="font-semibold">SCOP 4.6</span> (A++) voor optimale verwarmingsefficiëntie
         </li>
       </ul>
-      <p className="mt-4 text-sm text-gray-600">
+      <p className="mt-4 text-sm text-muted-foreground">
         Dit biedt de beste balans tussen aanschafkosten en energiebesparing.
       </p>
     </div>

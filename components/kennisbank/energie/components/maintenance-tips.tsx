@@ -23,12 +23,12 @@ export function MaintenanceTips() {
       <ul className="space-y-4">
         {tips.map((tip, index) => (
           <li key={index} className="flex items-start gap-4">
-            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 text-white text-sm">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue text-white text-sm">
               {index + 1}
             </span>
             <div>
               <p className="font-medium">{tip.tip}</p>
-              <p className="text-sm text-blue-600">{tip.impact}</p>
+              <p className="text-sm text-blue">{tip.impact}</p>
             </div>
           </li>
         ))}

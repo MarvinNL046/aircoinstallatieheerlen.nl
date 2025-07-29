@@ -13,13 +13,13 @@ export default function TotSnelPage() {
     <main className="min-h-screen bg-gray-50 flex items-center justify-center py-12">
       <div className="container mx-auto px-4 max-w-2xl">
         <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-          <CheckCircle className="h-16 w-16 text-green-600 mx-auto mb-6" />
+          <CheckCircle className="h-16 w-16 text-orange-500 mx-auto mb-6" />
           
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
             Bedankt voor uw aanvraag!
           </h1>
           
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-muted-foreground mb-8">
             We hebben uw bericht in goede orde ontvangen. Een van onze experts neemt 
             binnen 24 uur contact met u op om uw wensen te bespreken.
           </p>
@@ -37,7 +37,7 @@ export default function TotSnelPage() {
           </div>
 
           <div className="space-y-4">
-            <p className="text-gray-600">
+            <p className="text-muted-foreground">
               Heeft u direct een vraag? Bel ons gerust!
             </p>
             

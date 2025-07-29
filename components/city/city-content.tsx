@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card"
 import { MapPin, Phone, Mail, ThermometerSun } from "lucide-react"
 import Link from "next/link"
 import { ContactForm } from "@/components/contact-form"
+import { CityPageCTA } from "@/components/cta/content-cta"
 
 interface CityContentProps {
   city: {
@@ -19,7 +20,7 @@ export function CityContent({ city }: CityContentProps) {
     <div className="container py-12">
       <div className="grid gap-6 lg:grid-cols-2">
         <div>
-          <div className="flex items-center gap-2 text-blue-600 mb-4">
+          <div className="flex items-center gap-2 text-blue mb-4">
             <MapPin className="h-5 w-5" />
             <span className="font-medium">{city.region}</span>
           </div>
@@ -38,15 +39,15 @@ export function CityContent({ city }: CityContentProps) {
             </h2>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
-                <ThermometerSun className="h-5 w-5 text-blue-600" />
+                <ThermometerSun className="h-5 w-5 text-blue" />
                 <span>Airco installatie vanaf €1299,-</span>
               </li>
               <li className="flex items-center gap-3">
-                <ThermometerSun className="h-5 w-5 text-blue-600" />
+                <ThermometerSun className="h-5 w-5 text-blue" />
                 <span>Airco onderhoud vanaf €9,- p.m.</span>
               </li>
               <li className="flex items-center gap-3">
-                <ThermometerSun className="h-5 w-5 text-blue-600" />
+                <ThermometerSun className="h-5 w-5 text-blue" />
                 <span>Airco reparatie vanaf €129,-</span>
               </li>
             </ul>
@@ -120,6 +121,9 @@ export function CityContent({ city }: CityContentProps) {
           </Card>
         </div>
       </div>
+      
+      {/* CTA Banner for city page */}
+      <CityPageCTA city={city.title} />
     </div>
   )
 }

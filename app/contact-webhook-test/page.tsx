@@ -15,7 +15,7 @@ export default function ContactWebhookTestPage() {
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
             GoHighLevel Webhook Test
           </h1>
-          <p className="text-gray-600 mb-8">
+          <p className="text-muted-foreground mb-8">
             This page tests the webhook integration only (no EmailJS). 
             Use this to verify the webhook is receiving data correctly.
           </p>

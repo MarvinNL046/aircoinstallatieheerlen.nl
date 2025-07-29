@@ -9,8 +9,21 @@ import { Breadcrumb } from "@/components/navigation/breadcrumb"
 import { CTAWithForm } from "@/components/sections/cta-with-form"
 
 export const metadata: Metadata = {
-  title: "Veelgestelde Vragen | Airco Offerte Limburg",
-  description: "Vind antwoorden op veelgestelde vragen over airconditioning, installatie, onderhoud en meer.",
+  title: "❓ FAQ Airco Heerlen | Veelgestelde Vragen | StayCool",
+  description: "Veelgestelde vragen over airco installatie in Heerlen & Limburg. Split airco prijzen, onderhoud, vergunningen & meer. Expert antwoorden van StayCool ⭐ 4.7/5!",
+  keywords: [
+    'airco vragen heerlen',
+    'split airco faq',
+    'airco kosten limburg',
+    'airco vergunning heerlen',
+    'airco onderhoud vragen'
+  ],
+  openGraph: {
+    title: "❓ FAQ Airco Heerlen | Veelgestelde Vragen",
+    description: "Alle antwoorden over airco installatie & service in Heerlen. Expert advies van StayCool ⭐ 4.7/5!",
+    type: 'website',
+    locale: 'nl_NL'
+  }
 }
 
 const faqs = [

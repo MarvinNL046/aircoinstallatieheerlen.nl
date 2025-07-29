@@ -79,7 +79,7 @@ export default function DienstPage({ params }: Props) {
           <ul className="space-y-2">
             {dienst.benefits.map((benefit, index) => (
               <li key={index} className="flex items-center gap-2">
-                <span className="text-blue-600">✓</span>
+                <span className="text-blue">✓</span>
                 {benefit}
               </li>
             ))}
@@ -89,7 +89,7 @@ export default function DienstPage({ params }: Props) {
           <ul className="space-y-2">
             {dienst.features.map((feature, index) => (
               <li key={index} className="flex items-center gap-2">
-                <span className="text-blue-600">✓</span>
+                <span className="text-blue">✓</span>
                 {feature}
               </li>
             ))}

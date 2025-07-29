@@ -28,7 +28,7 @@ export function EfficiencyTable({ type }: EfficiencyTableProps) {
 
   return (
     <div className="overflow-x-auto mb-6">
-      <table className="min-w-full border-collapse border border-gray-200">
+      <table className="min-w-full border-collapse border border-border">
         <thead className="bg-gray-50">
           <tr>
             <th className="border p-3 text-left">{data.title} Waarde</th>
@@ -42,10 +42,10 @@ export function EfficiencyTable({ type }: EfficiencyTableProps) {
               <td className="border p-3">{row.value}</td>
               <td className="border p-3">{row.classification}</td>
               <td className={`border p-3 font-semibold ${
-                row.label === 'A+++' ? 'text-green-600' :
+                row.label === 'A+++' ? 'text-orange-500' :
                 row.label === 'A++' ? 'text-green-500' :
                 row.label === 'A+' ? 'text-green-400' :
-                'text-gray-600'
+                'text-muted-foreground'
               }`}>
                 {row.label}
               </td>

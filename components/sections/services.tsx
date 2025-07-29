@@ -15,7 +15,7 @@ const services = [
       "Gratis inspectie ter plaatse",
       "5 jaar garantie",
       "Inclusief montage",
-      "24/7 service",
+      "Snelle service",
     ],
     link: "/diensten/installatie",
   },
@@ -66,21 +66,21 @@ export function ServicesSection() {
               className="transform transition-all duration-300 hover:-translate-y-1"
             >
               <Card className="flex h-full flex-col p-6">
-                <service.icon className="h-12 w-12 text-blue-600" />
+                <service.icon className="h-12 w-12 text-blue" />
                 <h3 className="mt-4 text-xl font-semibold">{service.title}</h3>
                 <p className="mt-2 flex-1 text-muted-foreground">{service.description}</p>
                 
                 <ul className="mt-6 space-y-3">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2">
-                      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-green-100 text-green-600 text-sm">✓</span>
+                      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-orange-500/10 text-orange-500 text-sm">✓</span>
                       <span className="text-sm">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
                 <div className="mt-6">
-                  <p className="text-lg font-semibold text-blue-600">{service.price}</p>
+                  <p className="text-lg font-semibold text-blue">{service.price}</p>
                   <Button className="mt-4 w-full" asChild>
                     <Link href={service.link}>
                       Meer Informatie

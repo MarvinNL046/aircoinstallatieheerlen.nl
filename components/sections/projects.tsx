@@ -53,7 +53,7 @@ export function ProjectsSection() {
               </div>
               <CardHeader>
                 <div className="mb-2">
-                  <span className="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-600">
+                  <span className="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue">
                     {project.type}
                   </span>
                 </div>

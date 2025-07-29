@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export function CTASection() {
   return (
-    <section className="relative overflow-hidden bg-blue-600 py-24">
+    <section className="relative overflow-hidden bg-blue py-24">
       <div className="absolute inset-0 bg-grid-white/[0.2] bg-grid-8" />
       <div className="container relative">
         <div className="mx-auto max-w-4xl">
@@ -23,15 +23,15 @@ export function CTASection() {
                   </p>
                   <ul className="mt-6 space-y-3 text-sm">
                     <li className="flex items-center gap-2">
-                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 text-white">✓</span>
+                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue text-white">✓</span>
                       Gratis inspectie ter plaatse
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 text-white">✓</span>
+                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue text-white">✓</span>
                       Persoonlijk advies
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 text-white">✓</span>
+                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue text-white">✓</span>
                       Scherpe prijsgarantie
                     </li>
                   </ul>

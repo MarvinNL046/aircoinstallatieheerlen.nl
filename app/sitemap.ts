@@ -18,6 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { route: 'faq', priority: 0.7 },
     { route: 'blog', priority: 0.6 },
     { route: 'kennisbank', priority: 0.6 },
+    { route: 'producten', priority: 0.8 },
     { route: 'merken', priority: 0.6 },
     { route: 'steden', priority: 0.8 },
   ].map((page) => ({

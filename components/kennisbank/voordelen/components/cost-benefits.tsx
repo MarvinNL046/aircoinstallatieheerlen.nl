@@ -30,11 +30,11 @@ export function CostBenefits() {
     <div className="grid md:grid-cols-3 gap-6 mb-8">
       {benefits.map((benefit, index) => (
         <div key={index} className="bg-blue-50 p-6 rounded-lg">
-          <h3 className="font-semibold text-blue-600 mb-4">{benefit.category}</h3>
+          <h3 className="font-semibold text-blue mb-4">{benefit.category}</h3>
           <ul className="space-y-3">
             {benefit.items.map((item, itemIndex) => (
               <li key={itemIndex} className="flex items-start gap-2">
-                <span className="text-blue-600">•</span>
+                <span className="text-blue">•</span>
                 <span>{item}</span>
               </li>
             ))}

@@ -6,7 +6,7 @@ export function ContactAdvice() {
       <p className="font-semibold">Advies nodig?</p>
       <p>
         Onze experts helpen u graag bij het kiezen van het juiste airconditioningsysteem voor uw situatie.{" "}
-        <Link href="/contact" className="text-blue-600 hover:underline">
+        <Link href="/contact" className="text-blue hover:underline">
           Neem contact op
         </Link>{" "}
         voor persoonlijk advies.

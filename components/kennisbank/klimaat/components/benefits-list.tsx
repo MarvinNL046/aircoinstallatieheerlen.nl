@@ -13,7 +13,7 @@ export function BenefitsList() {
       <ul className="grid md:grid-cols-2 gap-4">
         {benefits.map((benefit) => (
           <li key={benefit} className="flex items-center gap-2">
-            <span className="text-green-600">✓</span>
+            <span className="text-orange-500">✓</span>
             {benefit}
           </li>
         ))}

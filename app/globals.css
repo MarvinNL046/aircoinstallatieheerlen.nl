@@ -4,48 +4,68 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222.2 84% 4.9%;
+    /* StayCool Design System Colors */
+    --orange: 24 95% 53%; /* #F97316 */
+    --blue-light: 217 91% 60%; /* #2563EB */
+    --blue: 221 83% 53%; /* #1D4ED8 */
+    --blue-dark: 222 47% 34%; /* #1E3A8A */
+    
+    /* Gray Scale */
+    --gray-50: 210 20% 98%; /* #F9FAFB */
+    --gray-100: 220 14% 96%; /* #F3F4F6 */
+    --gray-200: 220 13% 91%; /* #E5E7EB */
+    --gray-300: 216 12% 84%; /* #D1D5DB */
+    --gray-400: 218 11% 65%; /* #9CA3AF */
+    --gray-500: 220 9% 46%; /* #6B7280 */
+    --gray-600: 215 14% 34%; /* #4B5563 */
+    --gray-700: 217 19% 27%; /* #374151 */
+    --gray-800: 215 28% 17%; /* #1F2937 */
+    --gray-900: 221 39% 11%; /* #111827 */
+    
+    /* Component colors */
+    --background: var(--gray-50);
+    --foreground: var(--gray-900);
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: var(--gray-900);
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: var(--gray-900);
+    --primary: var(--orange);
+    --primary-foreground: 0 0% 100%;
+    --secondary: var(--blue-light);
+    --secondary-foreground: 0 0% 100%;
+    --muted: var(--gray-100);
+    --muted-foreground: var(--gray-600);
+    --accent: var(--blue);
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--gray-200);
+    --input: var(--gray-200);
+    --ring: var(--orange);
     --radius: 0.5rem;
   }
  
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    /* Dark mode with StayCool colors */
+    --background: var(--gray-900);
+    --foreground: var(--gray-50);
+    --card: var(--gray-800);
+    --card-foreground: var(--gray-50);
+    --popover: var(--gray-800);
+    --popover-foreground: var(--gray-50);
+    --primary: var(--orange);
+    --primary-foreground: 0 0% 100%;
+    --secondary: var(--blue-light);
+    --secondary-foreground: 0 0% 100%;
+    --muted: var(--gray-700);
+    --muted-foreground: var(--gray-300);
+    --accent: var(--blue);
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--gray-700);
+    --input: var(--gray-700);
+    --ring: var(--orange);
   }
 }
 
@@ -54,7 +74,17 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  /* Typography with Poppins */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+  
+  /* Focus states */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-orange-500 ring-offset-2 ring-offset-background;
   }
 }
 
@@ -93,4 +123,145 @@ grammarly-desktop-integration {
 
 .bg-grid-white\/\[0\.2\] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.2)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+.bg-grid-white\/\[0\.05\] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+.bg-grid-8 {
+  background-size: 2rem 2rem;
+}
+
+/* Mobile Optimizations */
+@layer base {
+  /* Ensure smooth scrolling on all devices */
+  html {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
+  /* Prevent iOS zoom on form inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+  
+  /* Ensure minimum touch target size */
+  button,
+  input,
+  select,
+  textarea,
+  [role="button"] {
+    min-height: 48px;
+    min-width: 48px;
+  }
+  
+  /* For links, add padding to meet touch target without affecting layout */
+  a, [role="link"] {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Add invisible touch area for small links on mobile */
+  @media (max-width: 768px) {
+    a::before,
+    [role="link"]::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 48px;
+      min-height: 48px;
+      pointer-events: none;
+    }
+  }
+  
+  /* Improve tap highlighting */
+  * {
+    -webkit-tap-highlight-color: rgba(249, 115, 22, 0.1);
+  }
+}
+
+/* Disable hover effects on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .hover\:bg-orange-500\/90:hover,
+  .hover\:bg-blue-500\/90:hover,
+  .hover\:bg-primary\/90:hover,
+  .hover\:bg-secondary\/80:hover,
+  .hover\:bg-accent:hover,
+  .hover\:underline:hover,
+  .hover\:shadow-xl:hover {
+    /* Reset hover states on touch devices */
+    background-color: inherit !important;
+    box-shadow: inherit !important;
+    text-decoration: inherit !important;
+  }
+  
+  /* Add active states for better feedback */
+  button:active,
+  a:active,
+  [role="button"]:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+  }
+}
+
+/* Mobile-specific font sizes for better readability */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem;
+  }
+  
+  p, li {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem;
+  }
+  
+  /* Ensure forms stack properly on mobile */
+  form > * + * {
+    margin-top: 1rem;
+  }
+  
+  /* Add padding to clickable elements for better touch targets */
+  .touch-target-enhance {
+    padding: 0.75rem;
+  }
+}
+
+/* Ensure mobile CTA button doesn't overlap content */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 5rem; /* Space for fixed CTA button */
+  }
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

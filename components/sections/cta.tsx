@@ -15,7 +15,7 @@ export function CTASection() {
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link href="/offerte">
-              <Button size="lg" className="w-full bg-green-600 hover:bg-green-700 sm:w-auto">
+              <Button size="lg" className="w-full bg-orange-500 hover:bg-orange-500/90 sm:w-auto">
                 Offerte Aanvragen
               </Button>
             </Link>

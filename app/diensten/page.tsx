@@ -7,15 +7,15 @@ import Link from "next/link"
 import diensten from "@/data/diensten.json"
 
 export const metadata: Metadata = {
-  title: "Onze Diensten | Airco Offerte Limburg",
-  description: "Bekijk ons complete aanbod van airconditioning diensten in Limburg. Van installatie en onderhoud tot reparatie, wij zijn uw betrouwbare partner.",
+  title: "💼 Airco Diensten Heerlen | Installatie, Onderhoud & Service | StayCool",
+  description: "Complete airco services in Heerlen & Limburg ⭐ 4.7/5. Split airco installatie, onderhoud & reparatie. Erkend specialist. Gratis offerte: 046-202-1430!",
   keywords: [
-    "airco diensten",
-    "airconditioning services",
-    "airco installatie",
-    "airco onderhoud",
-    "airco reparatie",
-    "Limburg",
+    "airco diensten heerlen",
+    "airco service limburg",
+    "split airco installatie",
+    "airco onderhoud heerlen",
+    "airco reparatie parkstad",
+    "klimaatbeheersing diensten",
     "professionele airco service"
   ],
 }
@@ -40,11 +40,11 @@ export default function DienstenPage() {
           return (
             <Link key={dienst.slug} href={`/diensten/${dienst.slug}`}>
               <Card className="p-6 h-full hover:shadow-lg transition-shadow">
-                <Icon className="h-12 w-12 text-blue-600 mb-4" />
+                <Icon className="h-12 w-12 text-blue mb-4" />
                 <h2 className="text-2xl font-semibold mb-3">{dienst.title}</h2>
-                <p className="text-gray-600 mb-4">{dienst.description}</p>
+                <p className="text-muted-foreground mb-4">{dienst.description}</p>
                 <div className="mt-auto">
-                  <p className="text-lg font-semibold text-blue-600">
+                  <p className="text-lg font-semibold text-blue">
                     Vanaf €{dienst.price.from},-
                   </p>
                 </div>

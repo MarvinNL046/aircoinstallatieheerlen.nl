@@ -14,8 +14,8 @@ export function IdealValues() {
           'bg-purple-50'
         }`}>
           <p className={`text-3xl font-bold mb-2 ${
-            index === 0 ? 'text-blue-600' :
-            index === 1 ? 'text-green-600' :
+            index === 0 ? 'text-blue' :
+            index === 1 ? 'text-orange-500' :
             'text-purple-600'
           }`}>{item.value}</p>
           <p className="text-sm">{item.label}</p>

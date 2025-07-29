@@ -131,7 +131,7 @@ export default function ContactWebhookTestForm() {
       {status === 'success' && (
         <div className="bg-green-50 border border-green-200 rounded-lg p-4">
           <div className="flex items-start space-x-3">
-            <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+            <CheckCircle className="h-5 w-5 text-orange-500 mt-0.5" />
             <div>
               <p className="text-green-800 font-medium">Webhook Success!</p>
               <p className="text-green-700 text-sm mt-1">{responseDetails}</p>
@@ -152,7 +152,7 @@ export default function ContactWebhookTestForm() {
         </div>
       )}
 
-      <div className="mt-8 p-4 bg-gray-100 rounded-lg">
+      <div className="mt-8 p-4 bg-muted rounded-lg">
         <h3 className="font-medium text-gray-900 mb-2">Test Data Preview:</h3>
         <pre className="text-xs text-gray-700 overflow-x-auto">
 {JSON.stringify({

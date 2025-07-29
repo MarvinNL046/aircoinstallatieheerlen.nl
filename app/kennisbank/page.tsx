@@ -3,8 +3,21 @@ import Link from "next/link"
 import { Card } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Kennisbank | StayCool Airco Maastricht",
-  description: "Ontdek alles wat u moet weten over airconditioning en klimaatbeheersing in onze uitgebreide kennisbank. Professioneel advies van StayCool Airco.",
+  title: "📚 Airco Kennisbank Heerlen | Expert Tips & Advies | StayCool",
+  description: "Airco kennisbank met expert tips over split airco, klimaatbeheersing & onderhoud. Leer alles over airconditioning van StayCool Heerlen ⭐ 4.7/5!",
+  keywords: [
+    'airco kennisbank',
+    'split airco tips',
+    'klimaatbeheersing advies',
+    'airco onderhoud tips',
+    'airco informatie heerlen'
+  ],
+  openGraph: {
+    title: "📚 Airco Kennisbank | Expert Tips & Advies",
+    description: "Ontdek alles over airconditioning in onze kennisbank. Expert advies van StayCool Heerlen ⭐ 4.7/5!",
+    type: 'website',
+    locale: 'nl_NL'
+  }
 }
 
 const articles = [
@@ -90,7 +103,7 @@ export default function KennisbankPage() {
         Ontdek alles wat u moet weten over airconditioning en klimaatbeheersing
       </p>
       <p className="text-muted-foreground mb-12">
-        Bij StayCool Airco delen we graag onze kennis en expertise. In onze uitgebreide kennisbank vindt u artikelen over verschillende aspecten van airconditioning, van technische informatie tot praktische tips. Voor nog meer informatie kunt u ook onze <a href="https://staycoolairco.nl/kennisbank" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">hoofdkennisbank</a> bezoeken.
+        Bij StayCool Airco delen we graag onze kennis en expertise. In onze uitgebreide kennisbank vindt u artikelen over verschillende aspecten van airconditioning, van technische informatie tot praktische tips. Voor nog meer informatie kunt u ook onze <a href="https://staycoolairco.nl/kennisbank" className="text-blue hover:underline" target="_blank" rel="noopener noreferrer">hoofdkennisbank</a> bezoeken.
       </p>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -103,7 +116,7 @@ export default function KennisbankPage() {
                 {article.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-600"
+                    className="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue"
                   >
                     {tag}
                   </span>

@@ -72,7 +72,7 @@ export default function StoringscodesGidsPage() {
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-muted">
                 <th className="border p-2 text-left">Code</th>
                 <th className="border p-2 text-left">Betekenis</th>
                 <th className="border p-2 text-left">Mogelijke oorzaak</th>
@@ -152,7 +152,7 @@ export default function StoringscodesGidsPage() {
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-muted">
                 <th className="border p-2 text-left">Code</th>
                 <th className="border p-2 text-left">Betekenis</th>
                 <th className="border p-2 text-left">Mogelijke oorzaak</th>
@@ -232,7 +232,7 @@ export default function StoringscodesGidsPage() {
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-muted">
                 <th className="border p-2 text-left">Code</th>
                 <th className="border p-2 text-left">Betekenis</th>
                 <th className="border p-2 text-left">Mogelijke oorzaak</th>
@@ -306,7 +306,7 @@ export default function StoringscodesGidsPage() {
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-muted">
                 <th className="border p-2 text-left">Code</th>
                 <th className="border p-2 text-left">Betekenis</th>
                 <th className="border p-2 text-left">Mogelijke oorzaak</th>
@@ -410,7 +410,7 @@ export default function StoringscodesGidsPage() {
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-muted">
                 <th className="border p-2 text-left">Categorie</th>
                 <th className="border p-2 text-left">Betekenis</th>
                 <th className="border p-2 text-left">Mogelijke oorzaak</th>
@@ -456,7 +456,7 @@ export default function StoringscodesGidsPage() {
           <div className="mt-4">
             <Link 
               href="/contact" 
-              className="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
+              className="inline-block bg-blue text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
             >
               Hulp Aanvragen
             </Link>

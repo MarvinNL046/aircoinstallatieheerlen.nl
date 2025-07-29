@@ -21,7 +21,7 @@ const features = [
   {
     icon: Wrench,
     title: "Onderhoud & Service",
-    description: "Regelmatig onderhoud en 24/7 service bij storingen.",
+    description: "Regelmatig onderhoud en snelle service tijdens kantooruren.",
     link: "/diensten/onderhoud",
   },
   {
@@ -37,7 +37,7 @@ export function FeaturesSection() {
     <section className="py-24">
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-blue-600 font-semibold">Waarom Kiezen voor Ons?</span>
+          <span className="text-blue font-semibold">Waarom Kiezen voor Ons?</span>
           <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
             De Airco Specialist van Limburg
           </h2>
@@ -54,11 +54,11 @@ export function FeaturesSection() {
             >
               <Link href={feature.link}>
                 <Card className="relative h-full overflow-hidden p-6 transition-all hover:shadow-lg">
-                  <div className="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-blue-500/10" />
-                  <feature.icon className="h-12 w-12 text-blue-600" />
+                  <div className="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-blue-light/10" />
+                  <feature.icon className="h-12 w-12 text-blue" />
                   <h3 className="mt-4 text-xl font-semibold">{feature.title}</h3>
                   <p className="mt-2 text-muted-foreground">{feature.description}</p>
-                  <div className="mt-4 flex items-center text-blue-600">
+                  <div className="mt-4 flex items-center text-blue">
                     <span className="text-sm">Lees meer</span>
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </div>
@@ -69,7 +69,7 @@ export function FeaturesSection() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button size="lg" className="bg-green-600 hover:bg-green-700" asChild>
+          <Button size="lg" className="bg-orange-500 hover:bg-orange-500/90" asChild>
             <Link href="/offerte">
               Vraag Nu een Offerte Aan
             </Link>

@@ -38,7 +38,7 @@ export function BenefitsDetails() {
           <ul className="space-y-2">
             {detail.features.map((feature, featureIndex) => (
               <li key={featureIndex} className="flex items-center gap-2">
-                <span className="text-green-600">✓</span>
+                <span className="text-orange-500">✓</span>
                 {feature}
               </li>
             ))}

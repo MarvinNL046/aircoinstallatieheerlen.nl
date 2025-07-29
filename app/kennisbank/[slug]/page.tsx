@@ -74,7 +74,7 @@ export default function ArticlePage({ params }: Props) {
           {article.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-full bg-blue-100 px-2.5 py-0.5 text-sm text-blue-600"
+              className="rounded-full bg-blue-100 px-2.5 py-0.5 text-sm text-blue"
             >
               {tag}
             </span>

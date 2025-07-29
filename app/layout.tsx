@@ -1,23 +1,33 @@
-import { Inter } from "next/font/google"
+import { Poppins } from "next/font/google"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { Toaster } from "@/components/ui/sonner"
 import { ThemeProvider } from "@/components/theme-provider"
+import { MobileCTAButton } from "@/components/mobile-cta-button"
+import { MobileFloatingCTA } from "@/components/cta/cta-banner-variants"
 import "./globals.css"
 
-const inter = Inter({ 
+const poppins = Poppins({ 
   subsets: ["latin"],
+  weight: ['300', '400', '600'],
   display: 'swap',
   preload: true,
+  variable: '--font-poppins',
 })
 
 export const metadata = {
   metadataBase: new URL('https://aircoinstallatieheerlen.nl'),
   title: {
-    default: 'Airco Installatie Heerlen | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
-    template: '%s | StayCool Airco Heerlen'
+    default: '🌟 Airco Heerlen | Installatie vanaf €11/mnd | StayCool',
+    template: '%s | Airco Heerlen - StayCool'
   },
-  description: 'Dé airco specialist in Heerlen! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie ✓ Beste prijs-kwaliteit ✓ 5 jaar garantie. Bel nu: 046 202 1430',
+  description: 'Airco installatie Heerlen door StayCool ⭐ 4.7/5 sterren. Split airco specialist in Parkstad & Zuid-Limburg. Gratis offerte binnen 24u. Bel 046-202-1430!',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -30,58 +40,59 @@ export const metadata = {
   },
   keywords: [
     // Primaire zoektermen
+    'airco heerlen',
     'airco installatie heerlen',
+    'airconditioning heerlen',
     'airco specialist heerlen',
     'airco monteur heerlen',
-    'airco bedrijf heerlen',
-    'airconditioning heerlen',
     
-    // Installatie en service
+    // Secundaire zoektermen
+    'airco limburg',
+    'airco service limburg',
+    'split airco',
+    'split airco heerlen',
+    'klimaatbeheersing',
+    'klimaatbeheersing heerlen',
+    
+    // Lokale zoektermen
+    'airco parkstad',
+    'airco zuid limburg',
+    'airco brunssum',
+    'airco landgraaf',
+    'airco kerkrade',
+    
+    // Service gerelateerd
+    'airco installatie',
+    'airco onderhoud',
+    'airco reparatie',
+    'airco service',
     'professionele airco installatie',
-    'airco installatie kosten',
-    'split airco installatie',
-    'multisplit airco heerlen',
-    'airco onderhoud heerlen',
-    'airco storing oplossen',
-    'snelle airco service',
     
-    // Producten en systemen
-    'energiezuinige airco',
+    // Product types
     'split airco systemen',
-    'multi-split airconditioning',
-    'stille airco installatie',
+    'multi-split airco',
+    'monosplit airco',
     'airco met verwarming',
-    
-    // Doelgroep specifiek
-    'airco voor woning',
-    'airco voor bedrijf',
-    'airco voor slaapkamer',
-    'beste airco voor thuis',
+    'warmtepomp airco',
     
     // Commercieel
-    'airco kopen heerlen',
-    'airco heerlen prijzen',
-    'airco prijsvergelijking',
-    'airco financiering',
-    'goedkope airco installatie',
+    'airco offerte',
+    'airco prijzen',
+    'airco kosten',
+    'airco vanaf 11 euro',
+    'airco lease',
     
-    // Expertise en advies
-    'airco showroom heerlen',
-    'airco advies op maat',
-    'gecertificeerde airco monteurs',
-    'airco merken',
-    'premium airco merken',
+    // Merken en kwaliteit
+    'daikin airco heerlen',
+    'mitsubishi airco heerlen',
+    'erkend airco installateur',
+    'gecertificeerd airco bedrijf',
     
-    // Conversie gericht
-    'airco offerte aanvragen',
-    'airco laten plaatsen',
-    'airco installatie advies',
-    
-    // Seizoensgebonden
-    'airco voor zomer en winter',
-    'klimaatbeheersing',
-    'duurzame koeling',
-    'warmtepomp'
+    // USPs
+    '24 uur service airco',
+    'gratis airco advies',
+    '5 jaar garantie airco',
+    'beste airco installateur'
   ],
   authors: [{ name: 'StayCool Airco' }],
   creator: 'StayCool Airco',
@@ -96,8 +107,8 @@ export const metadata = {
     locale: 'nl_NL',
     url: '/',
     siteName: 'StayCool Airco Heerlen',
-    title: 'Airco Installatie Heerlen | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
-    description: 'Dé airco specialist in Heerlen! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie ✓ Beste prijs-kwaliteit',
+    title: '🌟 Airco Heerlen | Installatie vanaf €11/mnd | StayCool',
+    description: 'Airco installatie Heerlen door StayCool ⭐ 4.7/5 sterren. Split airco specialist in Parkstad & Zuid-Limburg. Gratis offerte binnen 24u. Bel 046-202-1430!',
     images: [
       {
         url: '/opengraph-image',
@@ -109,8 +120,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Airco Installatie Heerlen | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
-    description: 'Dé airco specialist in Heerlen! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie',
+    title: '🌟 Airco Heerlen | Installatie vanaf €11/mnd | StayCool',
+    description: 'Airco installatie Heerlen door StayCool ⭐ 4.7/5 sterren. Split airco specialist in Parkstad & Zuid-Limburg. Gratis offerte binnen 24u!',
     images: ['/opengraph-image'],
     creator: '@staycoolairco',
     site: '@staycoolairco'
@@ -149,7 +160,7 @@ export default function RootLayout({
     >
       <head />
       <body 
-        className={`${inter.className} min-h-screen flex flex-col`}
+        className={`${poppins.variable} min-h-screen flex flex-col`}
         suppressHydrationWarning
       >
         <ThemeProvider
@@ -163,6 +174,8 @@ export default function RootLayout({
             <main id="main-content">{children}</main>
             <Footer />
           </div>
+          <MobileCTAButton />
+          <MobileFloatingCTA />
           <Toaster position="top-center" />
         </ThemeProvider>
       </body>

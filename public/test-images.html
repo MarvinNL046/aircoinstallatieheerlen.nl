@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .image-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .image-wrapper {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #333, #666);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        .success {
+            color: green;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testing Product Images</h1>
+    <div class="container" id="container"></div>
+
+    <script>
+        const images = [
+            { name: "Daikin Comfora", path: "/images/daikin-comfora-right.webp" },
+            { name: "Daikin Emura", path: "/images/daikin-emura-wit.webp" },
+            { name: "Daikin Stylish", path: "/images/daikin-stylish-wit.webp" },
+            { name: "Daikin Perfera", path: "/images/daikin-perfera-wit.webp" },
+            { name: "Ururu Sarara", path: "/images/Ururu-Sarara-right.webp" },
+            { name: "LG ArtCool", path: "/images/lg-artcool-mirror.webp" },
+            { name: "Samsung WindFree", path: "/images/samsung/windfreeElite/WindFree Elite_S2_Front_Web_RGB.webp" }
+        ];
+
+        const container = document.getElementById('container');
+
+        images.forEach(item => {
+            const box = document.createElement('div');
+            box.className = 'image-box';
+            
+            const wrapper = document.createElement('div');
+            wrapper.className = 'image-wrapper';
+            
+            const img = document.createElement('img');
+            img.src = item.path;
+            img.alt = item.name;
+            
+            const status = document.createElement('div');
+            
+            img.onload = function() {
+                status.className = 'success';
+                status.textContent = `✓ Loaded: ${img.naturalWidth}x${img.naturalHeight}px`;
+            };
+            
+            img.onerror = function() {
+                status.className = 'error';
+                status.textContent = `✗ Failed to load`;
+            };
+            
+            wrapper.appendChild(img);
+            box.appendChild(wrapper);
+            box.appendChild(document.createElement('h3')).textContent = item.name;
+            box.appendChild(document.createElement('p')).textContent = item.path;
+            box.appendChild(status);
+            
+            container.appendChild(box);
+        });
+    </script>
+</body>
+</html>

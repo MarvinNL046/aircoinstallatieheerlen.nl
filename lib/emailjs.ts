@@ -1,13 +1,13 @@
 import emailjs from '@emailjs/browser';
 
-// Initialize EmailJS with your public key
+// Initialize EmailJS with your public key from environment variables
 emailjs.init({
-  publicKey: "sjJ8kK6U9wFjY0zX9",
+  publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "sjJ8kK6U9wFjY0zX9",
 });
 
-// EmailJS service and template IDs
-export const EMAILJS_SERVICE_ID = "service_1rruujp";
-export const EMAILJS_TEMPLATE_ID = "template_rkcpzhg";
+// EmailJS service and template IDs from environment variables
+export const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_1rruujp";
+export const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_rkcpzhg";
 
 interface EmailFormData {
   name: string;

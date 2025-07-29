@@ -3,6 +3,7 @@ import { VoordelenLijst } from "./sections/voordelen-lijst"
 import { VoordelenDetails } from "./sections/voordelen-details"
 import { VoordelenConclusie } from "./sections/voordelen-conclusie"
 import { RelatedArticles } from "@/components/sections/related-articles"
+import { ContentCTA, BlogPostCTA } from "@/components/cta/content-cta"
 
 export function VoordelenBlogContent() {
   const relatedArticles = [
@@ -26,9 +27,12 @@ export function VoordelenBlogContent() {
   return (
     <article className="prose max-w-none">
       <VoordelenIntro />
+      <ContentCTA position="after-intro" />
       <VoordelenLijst />
       <VoordelenDetails />
+      <ContentCTA position="before-conclusion" />
       <VoordelenConclusie />
+      <BlogPostCTA />
       <RelatedArticles articles={relatedArticles} type="kennisbank" />
     </article>
   )

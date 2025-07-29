@@ -4,8 +4,20 @@ import { Breadcrumb } from "@/components/navigation/breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Over Ons | StayCool Airco Heerlen',
-  description: 'Maak kennis met StayCool Airco - uw lokale specialist voor airconditioning installatie, onderhoud en reparatie in Heerlen en omgeving. Ontdek onze expertise en persoonlijke aanpak.',
+  title: '🏆 Over StayCool Airco Heerlen | 4.7⭐ Erkend Specialist',
+  description: 'Over StayCool Airco Heerlen - Dé split airco specialist van Parkstad & Zuid-Limburg ⭐ 4.7/5. 10+ jaar ervaring, erkend installateur. Lees onze story!',
+  keywords: [
+    'over staycool airco',
+    'airco specialist heerlen',
+    'erkend airco installateur limburg',
+    'airco bedrijf parkstad'
+  ],
+  openGraph: {
+    title: '🏆 Over StayCool Airco Heerlen | 4.7⭐ Erkend Specialist',
+    description: 'Dé airco specialist van Heerlen & Parkstad. 10+ jaar ervaring, 4.7/5 sterren beoordeling. Ontdek onze expertise!',
+    type: 'website',
+    locale: 'nl_NL'
+  }
 };
 
 const features = [
@@ -107,23 +119,23 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold mb-4">Waarom kiezen voor een lokale specialist?</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
+                  <span className="text-blue mr-2">✓</span>
                   <span>Kennis van lokale regelgeving en vergunningen</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
+                  <span className="text-blue mr-2">✓</span>
                   <span>Ervaring met typische Heerlense gebouwen</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
+                  <span className="text-blue mr-2">✓</span>
                   <span>Snelle service bij storingen of onderhoud</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
+                  <span className="text-blue mr-2">✓</span>
                   <span>Persoonlijk advies afgestemd op lokale omstandigheden</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
+                  <span className="text-blue mr-2">✓</span>
                   <span>Betrokkenheid bij de lokale gemeenschap</span>
                 </li>
               </ul>
@@ -137,7 +149,7 @@ export default function AboutPage() {
           const Icon = feature.icon;
           return (
             <div key={feature.title} className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-              <Icon className="w-12 h-12 text-blue-600 mb-4" />
+              <Icon className="w-12 h-12 text-blue mb-4" />
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-muted-foreground">{feature.description}</p>
             </div>
@@ -149,32 +161,32 @@ export default function AboutPage() {
         <h2 className="text-3xl font-bold mb-8">Onze Diensten in Heerlen</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-            <h3 className="text-xl font-semibold mb-4 text-blue-600">Airco Installatie</h3>
+            <h3 className="text-xl font-semibold mb-4 text-blue">Airco Installatie</h3>
             <p className="mb-4">
               Professionele installatie van airconditioning systemen, perfect afgestemd op uw woning of bedrijf in Heerlen. 
               Van moderne split-units tot geavanceerde multi-split systemen.
             </p>
-            <Link href="/diensten" className="text-blue-600 hover:underline font-medium">
+            <Link href="/diensten" className="text-blue hover:underline font-medium">
               Meer over installatie →
             </Link>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-            <h3 className="text-xl font-semibold mb-4 text-blue-600">Onderhoud & Service</h3>
+            <h3 className="text-xl font-semibold mb-4 text-blue">Onderhoud & Service</h3>
             <p className="mb-4">
               Regelmatig onderhoud en snelle service voor alle merken airconditioners in Heerlen. 
               Voorkom storingen en verleng de levensduur van uw systeem.
             </p>
-            <Link href="/kennisbank/onderhoud-tips" className="text-blue-600 hover:underline font-medium">
+            <Link href="/kennisbank/onderhoud-tips" className="text-blue hover:underline font-medium">
               Meer over onderhoud →
             </Link>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-            <h3 className="text-xl font-semibold mb-4 text-blue-600">Advies & Offerte</h3>
+            <h3 className="text-xl font-semibold mb-4 text-blue">Advies & Offerte</h3>
             <p className="mb-4">
               Persoonlijk advies over de beste airconditioning oplossing voor uw situatie in Heerlen. 
               Vrijblijvende offerte met transparante prijzen.
             </p>
-            <Link href="/offerte" className="text-blue-600 hover:underline font-medium">
+            <Link href="/offerte" className="text-blue hover:underline font-medium">
               Vraag een offerte aan →
             </Link>
           </div>
@@ -201,7 +213,7 @@ export default function AboutPage() {
             const Icon = feature.icon;
             return (
               <div key={feature.title} className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <Icon className="w-12 h-12 text-blue-600 mb-4" />
+                <Icon className="w-12 h-12 text-blue mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-muted-foreground">{feature.description}</p>
               </div>
@@ -227,7 +239,7 @@ export default function AboutPage() {
       </section>
 
       <section>
-        <div className="bg-blue-600 text-white p-8 rounded-lg">
+        <div className="bg-blue text-white p-8 rounded-lg">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-4">Klaar om te Beginnen?</h2>
@@ -238,7 +250,7 @@ export default function AboutPage() {
               <div className="flex flex-wrap gap-4">
                 <Link 
                   href="/contact" 
-                  className="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition-colors"
+                  className="bg-white text-blue px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition-colors"
                 >
                   Contact Opnemen
                 </Link>
