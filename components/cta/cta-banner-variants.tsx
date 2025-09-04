@@ -81,8 +81,8 @@ export function CTABanner({
             {typeof message === 'string' ? message : `${message.icon} ${message.text}`}
           </p>
           <Button size="sm" variant="secondary" asChild>
-            <Link href="/offerte">
-              Offerte
+            <Link href="https://afspraken.staycoolairco.nl/" target="_blank" rel="noopener noreferrer">
+              Plan Afspraak
             </Link>
           </Button>
         </div>
@@ -163,9 +163,9 @@ export function CTABanner({
                 </Link>
               </Button>
               <Button variant="secondary" asChild>
-                <Link href="/offerte">
+                <Link href="https://afspraken.staycoolairco.nl/" target="_blank" rel="noopener noreferrer">
                   <Calendar className="mr-2 h-4 w-4" />
-                  Gratis Offerte
+                  Plan Direct Afspraak
                 </Link>
               </Button>
             </div>
@@ -233,9 +233,9 @@ export function CTABanner({
               </Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
-              <Link href="/offerte" className="min-w-[200px]">
+              <Link href="https://afspraken.staycoolairco.nl/" target="_blank" rel="noopener noreferrer" className="min-w-[200px]">
                 <Calendar className="mr-2 h-5 w-5" />
-                Gratis Offerte
+                Plan Direct Afspraak
               </Link>
             </Button>
           </div>
@@ -278,8 +278,8 @@ export function MobileFloatingCTA() {
             </Link>
           </Button>
           <Button size="sm" variant="secondary" asChild>
-            <Link href="/offerte">
-              Offerte
+            <Link href="https://afspraken.staycoolairco.nl/" target="_blank" rel="noopener noreferrer">
+              Afspraak
             </Link>
           </Button>
         </div>

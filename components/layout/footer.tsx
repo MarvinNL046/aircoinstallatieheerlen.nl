@@ -34,6 +34,9 @@ export function Footer() {
               <p className="text-gray-200">Vraag nu uw gratis offerte aan en ontvang binnen 24 uur een reactie!</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
+                <Link href="https://afspraken.staycoolairco.nl/" target="_blank" rel="noopener noreferrer">Plan Direct Afspraak</Link>
+              </Button>
               <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold">
                 <Link href="/contact">Gratis Offerte</Link>
               </Button>

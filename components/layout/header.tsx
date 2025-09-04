@@ -177,6 +177,16 @@ export function Header() {
                   </div>
                 ))}
                 <div className="mt-4 space-y-3">
+                  <Link 
+                    href="https://afspraken.staycoolairco.nl/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                      Plan Afspraak
+                    </Button>
+                  </Link>
                   <Link href="tel:0462021430" onClick={() => setIsOpen(false)}>
                     <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
                       <Phone className="mr-2 h-4 w-4" />
@@ -208,6 +218,19 @@ export function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
+          <Link 
+            href="https://afspraken.staycoolairco.nl/" 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button 
+              variant="outline"
+              className="border-2 transition-all border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+              aria-label="Plan een afspraak"
+            >
+              Plan Afspraak
+            </Button>
+          </Link>
           <Link 
             href="https://wa.me/310636481054?text=Hallo,%20ik%20heb%20interesse%20in%20een%20airco%20installatie" 
             target="_blank"

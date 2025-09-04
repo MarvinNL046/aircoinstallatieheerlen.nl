@@ -151,13 +151,22 @@ export function HeroStayCool() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col gap-4 sm:flex-row">
+              <Link href="https://afspraken.staycoolairco.nl/" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="w-full bg-blue-600 text-white hover:bg-blue-700 sm:w-auto font-bold shadow-lg hover:shadow-xl transition-all"
+                >
+                  <Clock className="mr-2 h-5 w-5" />
+                  Plan Direct Afspraak
+                </Button>
+              </Link>
               <Link href="/offerte">
                 <Button 
                   size="lg" 
                   className="w-full bg-orange-500 text-white hover:bg-orange-600 sm:w-auto font-bold shadow-lg hover:shadow-xl transition-all"
                 >
                   <AirVent className="mr-2 h-5 w-5" />
-                  Direct Offerte Aanvragen
+                  Offerte Aanvragen
                 </Button>
               </Link>
               <Link href="tel:0462021430">

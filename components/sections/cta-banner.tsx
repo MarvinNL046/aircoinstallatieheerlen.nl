@@ -24,15 +24,15 @@ export function CTABanner({ theme = "light" }: CTABannerProps) {
           </p>
           <div className="flex flex-wrap gap-2">
             <Button size="sm" variant="outline" asChild>
-              <Link href="tel:+31612345678">
+              <Link href="tel:0462021430">
                 <Phone className="mr-2 h-4 w-4" />
                 Bel Direct
               </Link>
             </Button>
-            <Button size="sm" className="bg-orange-500 hover:bg-orange-500/90" asChild>
-              <Link href="/offerte">
+            <Button size="sm" className="bg-blue-600 hover:bg-blue-700" asChild>
+              <Link href="https://afspraken.staycoolairco.nl/" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-4 w-4" />
-                Plan Afspraak
+                Plan Direct Afspraak
               </Link>
             </Button>
           </div>
