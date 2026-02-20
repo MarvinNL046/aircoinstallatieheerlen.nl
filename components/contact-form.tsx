@@ -61,8 +61,8 @@ export function ContactForm({ cityName }: ContactFormProps) {
       
       // Redirect to thank you page
       setTimeout(() => {
-        router.push('/tot-snel')
-      }, 1000)
+        window.location.href = 'https://staycoolairco.nl/tot-snel';
+      }, 1500)
     } catch (error) {
       const formType = cityName ? `city_${cityName.toLowerCase()}_form` : 'contact_form';
       trackFormSubmission(formType, false);

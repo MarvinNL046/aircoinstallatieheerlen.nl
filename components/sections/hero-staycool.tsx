@@ -51,7 +51,7 @@ export function HeroStayCool() {
       trackPixelFormSubmission('hero_form', true);
       
       toast.success("Uw aanvraag is succesvol verzonden! We nemen binnen 24 uur contact met u op.")
-      
+
       setFormData({
         name: "",
         email: "",
@@ -59,6 +59,11 @@ export function HeroStayCool() {
         city: "",
         message: "",
       })
+
+      // Redirect to thank you page
+      setTimeout(() => {
+        window.location.href = 'https://staycoolairco.nl/tot-snel';
+      }, 1500)
     } catch (error) {
       console.error('Form submission error:', error);
       toast.error("Er ging iets mis. Probeer het later opnieuw.")
