@@ -13,7 +13,7 @@ Airco Installatie Heerlen - A Next.js 13.5.6 website for StayCool Airco, providi
 - **Styling**: Tailwind CSS + Shadcn/ui components
 - **Forms**: React Hook Form + Zod validation
 - **Email**: EmailJS integration
-- **CRM**: GoHighLevel webhook integration
+- **CRM**: LeadFlow CRM integration
 - **Build**: Standalone output mode
 
 ## Development Commands
@@ -41,7 +41,7 @@ app/
 
 ### Component Architecture
 - **UI Components**: Located in `components/ui/` - Shadcn/ui components (Radix UI based)
-- **Form Components**: `components/forms/` - Contact forms with EmailJS and GoHighLevel integration
+- **Form Components**: `components/forms/` - Contact forms with EmailJS and LeadFlow CRM integration
 - **Section Components**: `components/sections/` - Reusable page sections (hero, CTA, features)
 - **Layout Components**: `components/layout/` - Header and footer components
 
@@ -52,8 +52,8 @@ app/
 
 ### Form Handling Flow
 1. React Hook Form with Zod validation
-2. EmailJS for email notifications (configured in `lib/emailjs.ts`)
-3. GoHighLevel webhook for CRM integration
+2. EmailJS for email notifications (configured in `lib/email.ts`)
+3. LeadFlow CRM for lead capture
 4. Environment variables control service IDs and endpoints
 
 ### Environment Configuration
@@ -61,7 +61,6 @@ Required environment variables (see `.env.local.example`):
 - `NEXT_PUBLIC_SITE_URL` - Base URL for the site
 - `NEXT_PUBLIC_GA_ID` - Google Analytics ID
 - `NEXT_PUBLIC_EMAILJS_*` - EmailJS configuration
-- `NEXT_PUBLIC_GHL_WEBHOOK_URL` - GoHighLevel webhook endpoint
 
 ### Key Patterns
 
@@ -69,7 +68,7 @@ Required environment variables (see `.env.local.example`):
 
 **Contact Form Integration**: All forms use a dual submission approach:
 1. EmailJS for immediate email notification
-2. GoHighLevel webhook for CRM lead capture
+2. LeadFlow CRM for lead capture
 
 **Component Imports**: Use path alias `@/*` which maps to the project root.
 
@@ -99,4 +98,3 @@ Currently no test framework is configured. Consider adding Jest/React Testing Li
 **Updating contact form**:
 1. Modify form components in `components/forms/`
 2. Update EmailJS template if field changes
-3. Update GoHighLevel webhook mapping if needed

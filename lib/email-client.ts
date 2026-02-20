@@ -9,9 +9,6 @@ emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'sjJ8kK6U9wFjY0zX9');
 const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_1rruujp';
 const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_rkcpzhg';
 
-// Webhook configuration
-const WEBHOOK_URL = process.env.NEXT_PUBLIC_GHL_WEBHOOK_URL || "https://services.leadconnectorhq.com/hooks/k90zUH3RgEQLfj7Yc55b/webhook-trigger/54670718-ea44-43a1-a81a-680ab3d5f67f";
-
 // Debug mode
 const DEBUG_MODE = process.env.NODE_ENV === 'development';
 
@@ -22,41 +19,6 @@ export interface EmailData {
   city: string;
   message: string;
 }
-
-// Send to GHL Webhook
-const sendToWebhook = async (data: EmailData): Promise<boolean> => {
-  try {
-    if (DEBUG_MODE) {
-      console.log('🚀 Sending to webhook:', data);
-    }
-
-    const response = await fetch(WEBHOOK_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-      },
-      body: JSON.stringify({
-        data: {
-          name: data.name,
-          email: data.email,
-          phone: data.phone || '',
-          city: data.city || '',
-          message: data.message
-        }
-      })
-    });
-
-    if (DEBUG_MODE) {
-      console.log('Webhook response:', response.status);
-    }
-
-    return response.ok;
-  } catch (error) {
-    console.error('❌ Webhook error:', error);
-    return false;
-  }
-};
 
 // Send via EmailJS (client-side)
 const sendViaEmailJS = async (data: EmailData): Promise<boolean> => {
@@ -91,35 +53,27 @@ const sendViaEmailJS = async (data: EmailData): Promise<boolean> => {
   }
 };
 
-// Main submission function with dual system (client-side)
+// Main submission function (client-side)
 export const sendEmailDual = async (data: EmailData): Promise<{ success: boolean; method: string }> => {
   if (DEBUG_MODE) {
-    console.log('🔄 Starting dual submission:', data);
+    console.log('Starting submission:', data);
   }
 
-  // Execute both submissions in parallel
-  const [webhookSuccess, emailJSSuccess] = await Promise.all([
-    sendToWebhook(data),
-    sendViaEmailJS(data)
-  ]);
+  const emailJSSuccess = await sendViaEmailJS(data);
 
   if (DEBUG_MODE) {
-    console.log('Results - Webhook:', webhookSuccess, 'EmailJS:', emailJSSuccess);
+    console.log('Results - EmailJS:', emailJSSuccess);
   }
-  
-  // Determine which method(s) succeeded
+
   const methods = [];
-  if (webhookSuccess) methods.push('GHL Webhook');
   if (emailJSSuccess) methods.push('EmailJS');
-  
-  const success = webhookSuccess || emailJSSuccess;
-  
-  if (success && DEBUG_MODE) {
-    console.log(`✅ Form submitted successfully via: ${methods.join(' + ')}`);
+
+  if (emailJSSuccess && DEBUG_MODE) {
+    console.log(`Form submitted successfully via: ${methods.join(' + ')}`);
   }
-  
+
   return {
-    success,
+    success: emailJSSuccess,
     method: methods.join(' + ') || 'none'
   };
 };
